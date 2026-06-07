@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>作品集 · 瑞琴雅集创客工作室</title>
+<meta name="description" content="瑞琴雅集创客工作室作品集 — 激光雕刻·3D打印·CNC五轴加工案例展示。每一件都是独一无二的雅作。">
+<meta name="theme-color" content="#EDE4D8">
+<link rel="icon" href="images/logo.png" type="image/png">
+<style>
+@font-face{font-family:'Kaiti SC Web';src:url('fonts/KaitiSC-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Kaiti SC Web';src:url('fonts/KaitiSC-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+:root{--ink:#2C2C2C;--ink-soft:#6B6560;--ink-fade:#9A928A;--paper:#EDE4D8;--paper-deep:#E3D9CB;--vermillion:#C23B22;--gold:#C9A96E;--celadon:#7BA388;--panel:#F2EBE3;--line:#D9CFC3;--smoke:rgba(0,0,0,0.05)}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'Kaiti SC Web','楷体-简','STKaitiSC-Regular','Kaiti SC','华文楷体',KaiTi,'Songti SC','PingFang SC',serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:2}::selection{background:var(--gold);color:#fff}::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--paper)}::-webkit-scrollbar-thumb{background:var(--ink-fade);border-radius:2px}body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 1px,rgba(201,169,110,0.08) 1px,rgba(201,169,110,0.08) 2px),repeating-linear-gradient(90deg,transparent,transparent 3px,rgba(123,163,136,0.05) 3px,rgba(123,163,136,0.05) 4px)}.reveal{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}.section-sash{width:48px;height:3px;margin:1.2rem auto 0;background:linear-gradient(90deg,var(--gold) 0%,var(--gold) 20%,var(--gold) 60%,transparent 100%);border-radius:2px}.ink-brush{width:100%;height:14px;margin:0;background:linear-gradient(90deg,transparent 0%,rgba(44,44,44,0.4) 5%,rgba(44,44,44,0.5) 18%,rgba(44,44,44,0.35) 35%,rgba(44,44,44,0.2) 55%,rgba(44,44,44,0.08) 75%,transparent 100%);border-radius:5px}.ink-brush::after{content:'';position:absolute;top:4px;left:8%;right:8%;height:6px;background:linear-gradient(90deg,transparent,rgba(201,169,110,0.5) 25%,rgba(201,169,110,0.3) 55%,transparent)}.btn{display:inline-flex;align-items:center;gap:6px;padding:0.7rem 1.8rem;font-family:'Kaiti SC Web','楷体-简','STKaitiSC-Regular','Kaiti SC','华文楷体',KaiTi,serif;font-size:0.85rem;font-weight:400;text-decoration:none;letter-spacing:0.08em;transition:all .3s;cursor:pointer;border:none;line-height:1.5;border-radius:2px}.btn-primary{background:var(--vermillion);color:#fff}.btn-primary:hover{opacity:.88;transform:translateY(-2px)}.btn-outline{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:60px;background:rgba(237,228,216,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--smoke)}.nav-back{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink-soft);font-size:0.82rem;letter-spacing:0.06em;transition:color .2s}.nav-back:hover{color:var(--vermillion)}.nav-back .arrow{font-size:1rem}.nav-title{font-size:0.85rem;color:var(--ink);letter-spacing:0.1em}.nav-cta{padding:6px 20px;background:var(--vermillion);color:#fff;font-size:0.75rem;text-decoration:none;letter-spacing:0.06em;transition:opacity .2s}.nav-cta:hover{opacity:.85}@media(max-width:768px){.nav-title{display:none}}.hero{min-height:40vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;text-align:center;padding:6rem 5vw 3rem}.hero-bg{position:absolute;inset:0;background-image:url('images/gallery-mixed.jpg');background-size:cover;background-position:center;filter:brightness(0.45)}.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,var(--paper) 100%)}.hero-content{position:relative;z-index:2;color:#fff}.hero-badge{font-size:0.7rem;letter-spacing:0.3em;color:var(--gold);margin-bottom:0.6rem;opacity:0.9}.hero-content h1{font-size:clamp(2rem,4vw,3rem);font-weight:400;letter-spacing:0.08em;margin-bottom:0.6rem;line-height:1.15}.hero-content p{font-size:0.9rem;color:rgba(255,255,255,0.85);line-height:1.8;max-width:480px;margin:0 auto}section{padding:4rem 5vw;position:relative}.section-inner{max-width:1200px;margin:0 auto}.section-head{text-align:center;margin-bottom:2rem}.section-kicker{font-size:0.65rem;color:var(--gold);letter-spacing:0.2em;margin-bottom:0.6rem}.section-kicker::before,.section-kicker::after{content:'——';margin:0 6px;opacity:.5}.section-title{font-size:clamp(1.5rem,2.5vw,2.2rem);font-weight:400;letter-spacing:0.08em;color:var(--ink);margin-bottom:0.5rem}.section-sub{font-size:0.85rem;color:var(--ink-soft);max-width:640px;margin:0 auto;line-height:2}.g-tabs{display:flex;gap:2px;justify-content:center;margin-bottom:2rem;flex-wrap:wrap}.g-tab{padding:7px 18px;font-size:0.8rem;color:var(--ink-soft);cursor:pointer;border:none;background:none;letter-spacing:0.06em;transition:all .2s}.g-tab.active,.g-tab:hover{color:var(--vermillion)}.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:1rem}.gal-item{position:relative;aspect-ratio:1;overflow:hidden;cursor:pointer}.gal-item.wide{grid-column:span 2}.gal-item.tall{grid-row:span 2;aspect-ratio:3/4}.gal-ph{width:100%;height:100%;position:relative;background:var(--paper);transition:all .35s;background-size:cover;background-position:center}.gal-item:hover .gal-ph{filter:brightness(0.85);transform:scale(1.02)}.gal-overlay{position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(44,44,44,0.7));opacity:0;transition:opacity .35s;display:flex;align-items:flex-end;padding:0.8rem}.gal-item:hover .gal-overlay{opacity:1}.gal-overlay-title{font-size:0.85rem;color:#fff;letter-spacing:0.04em;margin-bottom:2px}.gal-overlay-sub{font-size:0.65rem;color:var(--gold);letter-spacing:0.04em}.gal-overlay-cat{position:absolute;top:10px;left:10px;background:rgba(44,44,44,0.6);color:var(--gold);font-size:0.58rem;padding:2px 10px;letter-spacing:0.06em;border-radius:1px}.lightbox{display:none;position:fixed;inset:0;z-index:5000;background:rgba(245,240,235,0.95);align-items:center;justify-content:center;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}.lightbox.open{display:flex}.lightbox-close{position:absolute;top:20px;right:20px;width:40px;height:40px;border:none;background:none;font-size:1.6rem;color:var(--ink);cursor:pointer;transition:color .2s}.lightbox-close:hover{color:var(--gold)}.lightbox-inner{text-align:center;max-width:70vw}.lightbox-icon{font-size:clamp(50px,16vw,100px);display:block;margin-bottom:.8rem}.lightbox-title{font-size:1.2rem;color:var(--ink);margin-bottom:4px}.lightbox-sub{font-size:0.82rem;color:var(--ink-soft)}.load-more{text-align:center;margin-top:2rem}@media(max-width:768px){.gal-grid{grid-template-columns:1fr 1fr}.gal-item.wide{grid-column:auto}.gal-item.tall{grid-row:auto;aspect-ratio:1}}.sec-watermark{position:absolute;right:clamp(0.5rem,3vw,2rem);top:5%;font-size:clamp(5rem,14vw,11rem);color:var(--ink);opacity:0.28;writing-mode:vertical-rl;pointer-events:none;z-index:0;user-select:none;line-height:0.9;letter-spacing:0.08em}@media(max-width:768px){.sec-watermark{display:none}}#contact{text-align:center;padding:4rem 5vw}.contact-cards{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:2rem 0}.c-card{background:var(--panel);border:1px solid var(--line);padding:1.2rem 1.8rem;min-width:150px;transition:all .25s;cursor:pointer;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:4px}.c-card:hover{border-color:var(--gold);transform:translateY(-2px)}.c-icon{font-size:1.3rem}.c-label{font-size:0.68rem;color:var(--ink-soft);letter-spacing:0.08em}.c-val{font-size:0.88rem;font-weight:400;color:var(--vermillion)}.contact-note{font-size:0.75rem;color:var(--ink-soft);letter-spacing:0.04em;line-height:2}footer{text-align:center;padding:2rem 5vw;border-top:1px solid var(--line)}footer .f-brand{font-size:0.9rem;color:var(--ink);letter-spacing:0.06em;margin-bottom:4px}footer .f-copy{font-size:0.72rem;color:var(--ink-fade);letter-spacing:0.04em}footer .f-links{display:flex;gap:1rem;justify-content:center;margin:0.8rem 0}footer .f-links a{font-size:0.72rem;color:var(--ink-soft);text-decoration:none;letter-spacing:0.06em}footer .f-links a:hover{color:var(--gold)}.back-top{position:fixed;bottom:24px;right:24px;z-index:100;width:36px;height:36px;background:var(--vermillion);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.9rem;opacity:0;transition:all .3s;pointer-events:none;box-shadow:0 4px 16px rgba(194,59,34,0.15)}.back-top.show{opacity:1;pointer-events:all}#toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);padding:8px 20px;font-size:0.82rem;letter-spacing:0.06em;opacity:0;transition:all .3s;z-index:9000;pointer-events:none}
+</style>
+</head>
+<body>
+
+<button class="back-top" id="backTop">↑</button>
+
+<nav>
+  <a href="index.html" class="nav-back"><span class="arrow">←</span> 返回首页</a>
+  <span class="nav-title">作品集</span>
+  <a href="#contact" class="nav-cta">相约</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <div class="hero-badge">雅作 · 鉴赏</div>
+    <h1>每一件，都是独一无二的雅作</h1>
+    <p>激光雕刻 · 3D打印 · CNC五轴加工</p>
+  </div>
+</section>
+
+<section>
+  <span class="sec-watermark">匠心</span>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">雅赏</div>
+      <h2 class="section-title">作品集</h2>
+      <p class="section-sub">点击作品查看详情，每一件背后都有一个故事</p>
+      <div class="section-sash"></div>
+    </div>
+    <div class="g-tabs reveal">
+      <button class="g-tab active" data-cat="all">全部</button>
+      <button class="g-tab" data-cat="laser">激光雕刻</button>
+      <button class="g-tab" data-cat="3d">3D打印</button>
+      <button class="g-tab" data-cat="cnc">CNC五轴</button>
+    </div>
+    <div class="gal-grid reveal" id="galleryGrid">
+      <!-- 激光雕刻 -->
+      <div class="gal-item wide" data-cat="laser" onclick="openLB('⚡','定制相框雕刻','激光 · 椴木','激光雕刻','images/laser-wood.jpg')"><div class="gal-ph" style="background-image:url('images/laser-wood.jpg')"><span class="gal-overlay-cat">激光</span><span class="gal-overlay"><div><div class="gal-overlay-title">定制相框雕刻</div><div class="gal-overlay-sub">椴木 · 精细图文还原</div></div></span></div></div>
+      <div class="gal-item" data-cat="laser" onclick="openLB('🎁','企业礼品定制','激光 · 竹','激光雕刻','images/laser-gift.jpg')"><div class="gal-ph" style="background-image:url('images/laser-gift.jpg')"><span class="gal-overlay-cat">激光</span><span class="gal-overlay"><div><div class="gal-overlay-title">企业礼品定制</div><div class="gal-overlay-sub">竹制品 · Logo批量雕刻</div></div></span></div></div>
+      <div class="gal-item" data-cat="laser" onclick="openLB('🏅','运动奖牌定制','激光 · 亚克力','激光雕刻','images/laser-leather.jpg')"><div class="gal-ph" style="background-image:url('images/laser-leather.jpg')"><span class="gal-overlay-cat">激光</span><span class="gal-overlay"><div><div class="gal-overlay-title">运动奖牌定制</div><div class="gal-overlay-sub">亚克力 · 赛事纪念</div></div></span></div></div>
+      <div class="gal-item tall" data-cat="laser" onclick="openLB('🖼️','书法装饰雕刻','激光 · 胡桃木','激光雕刻','images/laser-detail.jpg')"><div class="gal-ph" style="background-image:url('images/laser-detail.jpg')"><span class="gal-overlay-cat">激光</span><span class="gal-overlay"><div><div class="gal-overlay-title">书法装饰雕刻</div><div class="gal-overlay-sub">胡桃木 · 中式镂空</div></div></span></div></div>
+
+      <!-- 3D打印 -->
+      <div class="gal-item" data-cat="3d" onclick="openLB('🖨️','建筑比例模型','3D打印 · 树脂','3D打印','images/3d-print.jpg')"><div class="gal-ph" style="background-image:url('images/3d-print.jpg')"><span class="gal-overlay-cat">3D</span><span class="gal-overlay"><div><div class="gal-overlay-title">建筑比例模型</div><div class="gal-overlay-sub">树脂 · 高精度还原</div></div></span></div></div>
+      <div class="gal-item" data-cat="3d" onclick="openLB('🎮','游戏手办定制','3D打印 · 全彩','3D打印','images/3d-figure.jpg')"><div class="gal-ph" style="background-image:url('images/3d-figure.jpg')"><span class="gal-overlay-cat">3D</span><span class="gal-overlay"><div><div class="gal-overlay-title">游戏手办定制</div><div class="gal-overlay-sub">全彩树脂 · 动漫角色</div></div></span></div></div>
+      <div class="gal-item" data-cat="3d" onclick="openLB('🏗️','产品原型验证','3D打印 · ABS','3D打印','images/3d-prototype.jpg')"><div class="gal-ph" style="background-image:url('images/3d-prototype.jpg')"><span class="gal-overlay-cat">3D</span><span class="gal-overlay"><div><div class="gal-overlay-title">产品原型验证</div><div class="gal-overlay-sub">ABS · 功能测试</div></div></span></div></div>
+      <div class="gal-item wide" data-cat="3d" onclick="openLB('🔬','精密零件原型','3D打印 · 光敏树脂','3D打印','images/3d-detail.jpg')"><div class="gal-ph" style="background-image:url('images/3d-detail.jpg')"><span class="gal-overlay-cat">3D</span><span class="gal-overlay"><div><div class="gal-overlay-title">精密零件原型</div><div class="gal-overlay-sub">光敏树脂 · 装配测试</div></div></span></div></div>
+
+      <!-- CNC -->
+      <div class="gal-item tall" data-cat="cnc" onclick="openLB('⚙️','铝合金结构件','CNC · 6061铝','CNC','images/cnc-brass.jpg')"><div class="gal-ph" style="background-image:url('images/cnc-brass.jpg')"><span class="gal-overlay-cat">CNC</span><span class="gal-overlay"><div><div class="gal-overlay-title">铝合金结构件</div><div class="gal-overlay-sub">6061铝 · 精密加工</div></div></span></div></div>
+      <div class="gal-item" data-cat="cnc" onclick="openLB('✨','黄铜铭牌定制','CNC · 黄铜','CNC','images/cnc-part.jpg')"><div class="gal-ph" style="background-image:url('images/cnc-part.jpg')"><span class="gal-overlay-cat">CNC</span><span class="gal-overlay"><div><div class="gal-overlay-title">黄铜铭牌定制</div><div class="gal-overlay-sub">黄铜 · Logo雕刻</div></div></span></div></div>
+      <div class="gal-item" data-cat="cnc" onclick="openLB('🪵','硬木工艺摆件','CNC · 硬木','CNC','images/cnc-wood.jpg')"><div class="gal-ph" style="background-image:url('images/cnc-wood.jpg')"><span class="gal-overlay-cat">CNC</span><span class="gal-overlay"><div><div class="gal-overlay-title">硬木工艺摆件</div><div class="gal-overlay-sub">硬木 · 精雕细琢</div></div></span></div></div>
+      <div class="gal-item" data-cat="cnc" onclick="openLB('🔩','精密机械零件','CNC · 铝合金','CNC','images/cnc-detail.jpg')"><div class="gal-ph" style="background-image:url('images/cnc-detail.jpg')"><span class="gal-overlay-cat">CNC</span><span class="gal-overlay"><div><div class="gal-overlay-title">精密机械零件</div><div class="gal-overlay-sub">铝合金 · ±0.01mm</div></div></span></div></div>
+    </div>
+    <div class="load-more reveal">
+      <p style="font-size:0.78rem;color:var(--ink-fade);letter-spacing:0.04em">更多作品持续更新中 · 欢迎联系获取最新案例</p>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLB()">✕</button>
+  <div class="lightbox-inner">
+    <div style="width:100%;max-width:560px;margin:0 auto 1rem;aspect-ratio:4/3;background-size:cover;background-position:center" id="lbImg"></div>
+    <span class="lightbox-icon" id="lbIcon">⚡</span>
+    <div class="lightbox-title" id="lbTitle"></div>
+    <div class="lightbox-sub" id="lbSub"></div>
+  </div>
+</div>
+
+<div class="ink-brush"></div>
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">雅约</div>
+      <h2 class="section-title">也想定制一件？</h2>
+      <p class="section-sub">发图发样，告诉我们你的想法</p>
+      <div class="section-sash"></div>
+    </div>
+    <div class="contact-cards reveal">
+      <div class="c-card" onclick="copyWx()"><span class="c-icon">💬</span><span class="c-label">微信</span><span class="c-val">stopshow2</span></div>
+      <a href="tel:18688462968" class="c-card"><span class="c-icon">📞</span><span class="c-label">电话</span><span class="c-val">18688462968</span></a>
+      <a href="mailto:yixue990928@163.com" class="c-card"><span class="c-icon">📧</span><span class="c-label">邮箱</span><span class="c-val">yixue990928@163.com</span></a>
+    </div>
+    <p class="contact-note reveal">广州白云 · 全国发货 · 单件起订 · 来图来样即可</p>
+  </div>
+</section>
+
+<footer>
+  <div class="f-brand">瑞琴雅集创客工作室</div>
+  <div class="f-links"><a href="index.html">首页</a><a href="laser.html">激光雕刻</a><a href="3d-print.html">3D打印</a><a href="cnc.html">CNC五轴</a><a href="about.html">关于</a><a href="index.html#contact">相约</a></div>
+  <div class="f-copy">激光雕刻 · 3D打印 · CNC五轴 · 个性定制 · 丙午年</div>
+</footer>
+<div id="toast">微信号已复制 ✓</div>
+
+<script>
+const backTop=document.getElementById('backTop');
+window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>80));
+backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const observer=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('.g-tab').forEach(t=>{t.addEventListener('click',()=>{document.querySelectorAll('.g-tab').forEach(x=>x.classList.remove('active'));t.classList.add('active');const c=t.dataset.cat;document.querySelectorAll('.gal-item').forEach(i=>{i.style.display=c==='all'||i.dataset.cat===c?'':'none'})})});
+function openLB(i,t,s,cat,img){document.getElementById('lightbox').classList.add('open');document.getElementById('lbIcon').textContent=i;document.getElementById('lbTitle').textContent=t;document.getElementById('lbSub').textContent=s;document.getElementById('lbImg').style.backgroundImage="url('"+img+"')";document.body.style.overflow='hidden'}
+function closeLB(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()});
+let tt;function copyWx(){navigator.clipboard.writeText('stopshow2');const e=document.getElementById('toast');e.style.opacity='1';e.style.transform='translateX(-50%) translateY(0)';clearTimeout(tt);tt=setTimeout(()=>{e.style.opacity='0';e.style.transform='translateX(-50%) translateY(20px)'},1800)}
+</script>
+</body>
+</html>

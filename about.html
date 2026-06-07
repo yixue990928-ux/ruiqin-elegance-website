@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于 · 瑞琴雅集创客工作室</title>
+<meta name="description" content="瑞琴雅集创客工作室 — 广州白云实体工厂，十五年定制行业深耕。五轴CNC、3D打印、激光雕刻，以雅致之心行精工之事。">
+<meta name="theme-color" content="#EDE4D8">
+<link rel="icon" href="images/logo.png" type="image/png">
+<style>
+@font-face{font-family:'Kaiti SC Web';src:url('fonts/KaitiSC-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Kaiti SC Web';src:url('fonts/KaitiSC-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+:root{--ink:#2C2C2C;--ink-soft:#6B6560;--ink-fade:#9A928A;--paper:#EDE4D8;--paper-deep:#E3D9CB;--vermillion:#C23B22;--gold:#C9A96E;--celadon:#7BA388;--panel:#F2EBE3;--line:#D9CFC3;--smoke:rgba(0,0,0,0.05)}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'Kaiti SC Web','楷体-简','STKaitiSC-Regular','Kaiti SC','华文楷体',KaiTi,'Songti SC','PingFang SC',serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:2}::selection{background:var(--gold);color:#fff}::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--paper)}::-webkit-scrollbar-thumb{background:var(--ink-fade);border-radius:2px}body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 1px,rgba(201,169,110,0.08) 1px,rgba(201,169,110,0.08) 2px),repeating-linear-gradient(90deg,transparent,transparent 3px,rgba(123,163,136,0.05) 3px,rgba(123,163,136,0.05) 4px)}.reveal{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}.section-sash{width:48px;height:3px;margin:1.2rem auto 0;background:linear-gradient(90deg,var(--gold) 0%,var(--gold) 20%,var(--gold) 60%,transparent 100%);border-radius:2px;position:relative}.ink-brush{width:100%;height:14px;margin:0;position:relative;background:linear-gradient(90deg,transparent 0%,rgba(44,44,44,0.4) 5%,rgba(44,44,44,0.5) 18%,rgba(44,44,44,0.35) 35%,rgba(44,44,44,0.2) 55%,rgba(44,44,44,0.08) 75%,transparent 100%);border-radius:5px}.ink-brush::after{content:'';position:absolute;top:4px;left:8%;right:8%;height:6px;background:linear-gradient(90deg,transparent,rgba(201,169,110,0.5) 25%,rgba(201,169,110,0.3) 55%,transparent)}.btn{display:inline-flex;align-items:center;gap:6px;padding:0.7rem 1.8rem;font-family:'Kaiti SC Web','楷体-简','STKaitiSC-Regular','Kaiti SC','华文楷体',KaiTi,serif;font-size:0.85rem;font-weight:400;text-decoration:none;letter-spacing:0.08em;transition:all .3s;cursor:pointer;border:none;line-height:1.5;border-radius:2px}.btn-primary{background:var(--vermillion);color:#fff}.btn-primary:hover{opacity:.88;transform:translateY(-2px)}.btn-outline{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:60px;background:rgba(237,228,216,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--smoke)}.nav-back{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink-soft);font-size:0.82rem;letter-spacing:0.06em;transition:color .2s}.nav-back:hover{color:var(--vermillion)}.nav-back .arrow{font-size:1rem}.nav-title{font-size:0.85rem;color:var(--ink);letter-spacing:0.1em}.nav-cta{padding:6px 20px;background:var(--vermillion);color:#fff;font-size:0.75rem;text-decoration:none;letter-spacing:0.06em;transition:opacity .2s}.nav-cta:hover{opacity:.85}@media(max-width:768px){.nav-title{display:none}}.hero{min-height:50vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;text-align:center;padding:6rem 5vw 4rem}.hero-bg{position:absolute;inset:0;background-image:url('images/about-studio.jpg');background-size:cover;background-position:center;filter:brightness(0.45)}.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,var(--paper) 100%)}.hero-content{position:relative;z-index:2;color:#fff;max-width:700px}.hero-badge{font-size:0.7rem;letter-spacing:0.3em;color:var(--gold);margin-bottom:0.6rem;opacity:0.9}.hero-content h1{font-size:clamp(2rem,4vw,3rem);font-weight:400;letter-spacing:0.08em;margin-bottom:0.8rem;line-height:1.15}.hero-content p{font-size:0.9rem;color:rgba(255,255,255,0.85);line-height:1.8;max-width:520px;margin:0 auto}section{padding:4rem 5vw;position:relative}.section-inner{max-width:1080px;margin:0 auto}.section-head{text-align:center;margin-bottom:2.5rem}.section-kicker{font-size:0.65rem;color:var(--gold);letter-spacing:0.2em;margin-bottom:0.6rem;position:relative;display:inline-block}.section-kicker::before,.section-kicker::after{content:'——';margin:0 6px;opacity:.5}.section-title{font-size:clamp(1.5rem,2.5vw,2.2rem);font-weight:400;letter-spacing:0.08em;color:var(--ink);margin-bottom:0.5rem}.section-sub{font-size:0.85rem;color:var(--ink-soft);max-width:640px;margin:0 auto;line-height:2}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:2rem}.story-image{aspect-ratio:4/3;background-image:url('images/about-studio.jpg');background-size:cover;background-position:center;border:1px solid var(--line)}.story-text p{font-size:0.88rem;color:var(--ink-soft);line-height:2.2;margin-bottom:0.8rem;letter-spacing:0.03em}.story-text em{color:var(--ink);font-style:normal}@media(max-width:768px){.story-grid{grid-template-columns:1fr;gap:2rem}}.timeline{margin-top:2rem}.tl-item{display:flex;gap:1.5rem;padding:1.2rem 0;border-bottom:1px solid var(--smoke)}.tl-year{font-size:1.2rem;color:var(--vermillion);min-width:70px;font-weight:400;font-family:serif}.tl-content h4{font-size:0.9rem;font-weight:400;margin-bottom:3px}.tl-content p{font-size:0.8rem;color:var(--ink-soft);line-height:1.8}.val-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:2rem}.val-card{background:var(--panel);padding:2rem;text-align:center;transition:all .3s}.val-card:hover{transform:translateY(-3px)}.val-icon{font-size:1.8rem;margin-bottom:0.5rem;display:block}.val-card h4{font-size:0.9rem;font-weight:400;margin-bottom:4px}.val-card p{font-size:0.78rem;color:var(--ink-soft);line-height:1.8}.equip-table{margin-top:2rem;width:100%;border-collapse:collapse}.equip-table th{text-align:left;font-weight:400;color:var(--ink);font-size:0.85rem;padding:0.8rem 0;border-bottom:1px solid var(--gold)}.equip-table td{padding:0.7rem 0;font-size:0.82rem;color:var(--ink-soft);border-bottom:1px solid var(--smoke)}.equip-table td:first-child{color:var(--ink)}@media(max-width:600px){.equip-table td{display:block;padding:0.3rem 0}.equip-table tr{padding:0.5rem 0;display:block;border-bottom:1px solid var(--smoke)}.equip-table th{display:none}}#contact{text-align:center;padding:4rem 5vw}.contact-cards{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:2rem 0}.c-card{background:var(--panel);border:1px solid var(--line);padding:1.2rem 1.8rem;min-width:150px;transition:all .25s;cursor:pointer;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:4px}.c-card:hover{border-color:var(--gold);transform:translateY(-2px)}.c-icon{font-size:1.3rem}.c-label{font-size:0.68rem;color:var(--ink-soft);letter-spacing:0.08em}.c-val{font-size:0.88rem;font-weight:400;color:var(--vermillion)}.contact-note{font-size:0.75rem;color:var(--ink-soft);letter-spacing:0.04em;line-height:2}footer{text-align:center;padding:2rem 5vw;border-top:1px solid var(--line)}footer .f-brand{font-size:0.9rem;color:var(--ink);letter-spacing:0.06em;margin-bottom:4px}footer .f-copy{font-size:0.72rem;color:var(--ink-fade);letter-spacing:0.04em}footer .f-links{display:flex;gap:1rem;justify-content:center;margin:0.8rem 0}footer .f-links a{font-size:0.72rem;color:var(--ink-soft);text-decoration:none;letter-spacing:0.06em}footer .f-links a:hover{color:var(--gold)}.back-top{position:fixed;bottom:24px;right:24px;z-index:100;width:36px;height:36px;background:var(--vermillion);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.9rem;opacity:0;transition:all .3s;pointer-events:none;box-shadow:0 4px 16px rgba(194,59,34,0.15)}.back-top.show{opacity:1;pointer-events:all}#toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);padding:8px 20px;font-size:0.82rem;letter-spacing:0.06em;opacity:0;transition:all .3s;z-index:9000;pointer-events:none}
+</style>
+</head>
+<body>
+
+<button class="back-top" id="backTop">↑</button>
+
+<nav>
+  <a href="index.html" class="nav-back"><span class="arrow">←</span> 返回首页</a>
+  <span class="nav-title">关于瑞琴雅集</span>
+  <a href="#contact" class="nav-cta">相约</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <div class="hero-badge">雅集 · 缘起</div>
+    <h1>以雅致之心，行精工之事</h1>
+    <p>广州白云 · 十五年定制深耕 · 三种数字智造工艺</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">雅意</div>
+      <h2 class="section-title">品牌故事</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="story-grid">
+      <div class="story-image reveal"></div>
+      <div class="story-text reveal">
+        <p>「雅集」二字，源于中国古代文人的聚会传统——志同道合者携琴携酒，以艺会友，切磋琢磨。瑞琴雅集承此精神，将传统雅集之韵融入现代数字智造。</p>
+        <p>工作室位于<em>广州白云</em>，深耕定制行业逾十年。从最初的一台激光雕刻机起步，逐步发展为拥有五轴CNC加工中心、工业级3D打印机和全系列激光雕刻设备的<em>综合性创客工作室</em>。</p>
+        <p>我们坚信：<em>每一個人心中都有一件想要实现的作品</em>。无论是企业批量订单、个人创意礼物，还是工业手板原型，瑞琴雅集以专业之力，让想法落地成真。</p>
+        <p>十五年来，我们服务过科技企业、建筑事务所、独立设计师、品牌主理人，以及无数怀揣创意之心的个人客户。每一件作品交付时那份满意的笑容，是我们坚持至今的最大动力。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">雅志</div>
+      <h2 class="section-title">发展历程</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item"><div class="tl-year">2010</div><div class="tl-content"><h4>初入行业</h4><p>从一台家用激光雕刻机起步，在阳台开始第一单定制业务——木质手机壳刻字。</p></div></div>
+      <div class="tl-item"><div class="tl-year">2013</div><div class="tl-content"><h4>迁入厂房</h4><p>业务扩大，租赁第一个工作室场地，购入首台工业级激光雕刻机，开始承接企业批量订单。</p></div></div>
+      <div class="tl-item"><div class="tl-year">2016</div><div class="tl-content"><h4>引入3D打印</h4><p>新增光固化3D打印服务，进入手板模型市场，与多家设计公司建立长期合作。</p></div></div>
+      <div class="tl-item"><div class="tl-year">2019</div><div class="tl-content"><h4>CNC加工上线</h4><p>购入首台CNC雕刻机，拓展金属加工能力，开始承接铝合金零件、黄铜铭牌定制。</p></div></div>
+      <div class="tl-item"><div class="tl-year">2022</div><div class="tl-content"><h4>全面升级</h4><p>迁至广州白云现址，引入五轴加工中心和高精度3D打印机，设备全面升级，服务能力大幅提升。</p></div></div>
+      <div class="tl-item"><div class="tl-year">2024</div><div class="tl-content"><h4>品牌焕新</h4><p>正式创立「瑞琴雅集」品牌，整合全部工艺服务，以统一品牌形象服务广大客户。</p></div></div>
+      <div class="tl-item"><div class="tl-year">今朝</div><div class="tl-content"><h4>持续精进</h4><p>三大工艺协同，千余项目经验，始终以雅致之心对待每一件作品。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">雅念</div>
+      <h2 class="section-title">我们的理念</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="val-grid reveal">
+      <div class="val-card"><span class="val-icon">🎋</span><h4>匠心精神</h4><p>每一件作品都经过精心打磨，不因批量而敷衍，不因单件而轻视。</p></div>
+      <div class="val-card"><span class="val-icon">🤝</span><h4>信任为本</h4><p>透明沟通，如实告知工艺限制与预期效果。不夸大承诺，不偷工减料。</p></div>
+      <div class="val-card"><span class="val-icon">💡</span><h4>创意赋能</h4><p>提供专业工艺建议，帮助客户优化设计方案，让创意以最佳效果呈现。</p></div>
+      <div class="val-card"><span class="val-icon">🌱</span><h4>持续成长</h4><p>不断学习新技术、引进新设备、优化流程，只为提供更好的定制体验。</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">雅器</div>
+      <h2 class="section-title">设备一览</h2>
+      <div class="section-sash"></div>
+    </div>
+    <table class="equip-table reveal">
+      <tr><th>设备名称</th><th>型号/规格</th><th>应用</th></tr>
+      <tr><td>五轴CNC加工中心</td><td>HSM-600U · 五轴联动</td><td>精密金属零件、复杂曲面、批量加工</td></tr>
+      <tr><td>工业级光固化3D打印机</td><td>SLA · 成型600×400×400mm</td><td>高精度手板、精细模型、珠宝原型</td></tr>
+      <tr><td>全彩3D打印机</td><td>全彩树脂 · 高保真色彩</td><td>人物手办、建筑模型、产品展示</td></tr>
+      <tr><td>FDM大型3D打印机</td><td>成型尺寸500×500×500mm</td><td>大型原型、功能件、工装夹具</td></tr>
+      <tr><td>CO₂激光雕刻机</td><td>900×600mm · 100W</td><td>木质/亚克力/皮革切割雕刻</td></tr>
+      <tr><td>光纤激光打标机</td><td>金属打标 · 二维码/序列号</td><td>不锈钢、铝合金、黄铜永久打标</td></tr>
+      <tr><td>后处理精加工线</td><td>打磨/抛光/喷涂/装配</td><td>表面处理、组装、品质检验</td></tr>
+    </table>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">雅约</div>
+      <h2 class="section-title">期待与您合作</h2>
+      <p class="section-sub">无论是批量订单还是单件定制，都欢迎来聊</p>
+      <div class="section-sash"></div>
+    </div>
+    <div class="contact-cards reveal">
+      <div class="c-card" onclick="copyWx()"><span class="c-icon">💬</span><span class="c-label">微信</span><span class="c-val">stopshow2</span></div>
+      <a href="tel:18688462968" class="c-card"><span class="c-icon">📞</span><span class="c-label">电话</span><span class="c-val">18688462968</span></a>
+      <a href="mailto:yixue990928@163.com" class="c-card"><span class="c-icon">📧</span><span class="c-label">邮箱</span><span class="c-val">yixue990928@163.com</span></a>
+    </div>
+    <p class="contact-note reveal">广州白云 · 全国发货 · 来图来样即可定制</p>
+  </div>
+</section>
+
+<footer>
+  <div class="f-brand">瑞琴雅集创客工作室</div>
+  <div class="f-links"><a href="index.html">首页</a><a href="laser.html">激光雕刻</a><a href="3d-print.html">3D打印</a><a href="cnc.html">CNC五轴</a><a href="gallery.html">作品集</a><a href="index.html#contact">相约</a></div>
+  <div class="f-copy">激光雕刻 · 3D打印 · CNC五轴 · 个性定制 · 丙午年</div>
+</footer>
+<div id="toast">微信号已复制 ✓</div>
+
+<script>
+const backTop=document.getElementById('backTop');
+window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>80));
+backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const observer=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+let tt;function copyWx(){navigator.clipboard.writeText('stopshow2');const e=document.getElementById('toast');e.style.opacity='1';e.style.transform='translateX(-50%) translateY(0)';clearTimeout(tt);tt=setTimeout(()=>{e.style.opacity='0';e.style.transform='translateX(-50%) translateY(20px)'},1800)}
+</script>
+</body>
+</html>
