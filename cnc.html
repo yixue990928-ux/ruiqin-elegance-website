@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CNC五轴加工 · 瑞琴雅集创客工作室</title>
+<meta name="description" content="瑞琴雅集 · CNC五轴加工定制。±0.01mm精度，铝合金、黄铜、硬木精密加工。五轴联动，复杂曲面一次成型。">
+<meta name="theme-color" content="#EDE4D8">
+<link rel="icon" href="images/logo.png" type="image/png">
+<style>
+:root{--ink:#2C2C2C;--ink-soft:#6B6560;--ink-fade:#9A928A;--paper:#EDE4D8;--paper-deep:#E3D9CB;--vermillion:#C23B22;--gold:#C9A96E;--celadon:#7BA388;--panel:#F2EBE3;--line:#D9CFC3;--smoke:rgba(0,0,0,0.05)}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'Kaiti SC','楷体-简','华文楷体',KaiTi,'STKaiti','Noto Serif SC','Songti SC',serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:2}::selection{background:var(--gold);color:#fff}::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--paper)}::-webkit-scrollbar-thumb{background:var(--ink-fade);border-radius:2px}body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 1px,rgba(201,169,110,0.08) 1px,rgba(201,169,110,0.08) 2px),repeating-linear-gradient(90deg,transparent,transparent 3px,rgba(123,163,136,0.05) 3px,rgba(123,163,136,0.05) 4px)}.reveal{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}.section-sash{width:48px;height:3px;margin:1.2rem auto 0;background:linear-gradient(90deg,var(--gold) 0%,var(--gold) 20%,var(--gold) 60%,transparent 100%);border-radius:2px}.ink-brush{width:100%;height:14px;margin:0;background:linear-gradient(90deg,transparent 0%,rgba(44,44,44,0.4) 5%,rgba(44,44,44,0.5) 18%,rgba(44,44,44,0.35) 35%,rgba(44,44,44,0.2) 55%,rgba(44,44,44,0.08) 75%,transparent 100%);border-radius:5px}.ink-brush::after{content:'';position:absolute;top:4px;left:8%;right:8%;height:6px;background:linear-gradient(90deg,transparent,rgba(201,169,110,0.5) 25%,rgba(201,169,110,0.3) 55%,transparent)}.btn{display:inline-flex;align-items:center;gap:6px;padding:0.7rem 1.8rem;font-size:0.85rem;font-weight:400;text-decoration:none;letter-spacing:0.08em;transition:all .3s;cursor:pointer;border:none;line-height:1.5;border-radius:2px}.btn-primary{background:var(--vermillion);color:#fff}.btn-primary:hover{opacity:.88;transform:translateY(-2px)}.btn-outline{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:60px;background:rgba(237,228,216,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--smoke)}.nav-back{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink-soft);font-size:0.82rem;letter-spacing:0.06em;transition:color .2s}.nav-back:hover{color:var(--vermillion)}.nav-back .arrow{font-size:1rem}.nav-title{font-size:0.85rem;color:var(--ink);letter-spacing:0.1em}.nav-cta{padding:6px 20px;background:var(--vermillion);color:#fff;font-size:0.75rem;text-decoration:none;letter-spacing:0.06em;transition:opacity .2s}.nav-cta:hover{opacity:.85}@media(max-width:768px){.nav-title{display:none}}.hero{min-height:70vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;text-align:center;padding:6rem 5vw 4rem}.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(0.45)}.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,var(--paper) 100%)}.hero-content{position:relative;z-index:2;color:#fff;max-width:700px}.hero-badge{font-size:0.7rem;letter-spacing:0.3em;color:var(--gold);margin-bottom:0.6rem;opacity:0.9}.hero-content h1{font-size:clamp(2.2rem,5vw,4rem);font-weight:400;letter-spacing:0.08em;margin-bottom:0.8rem;line-height:1.15}.hero-content p{font-size:0.95rem;color:rgba(255,255,255,0.85);line-height:1.8;max-width:520px;margin:0 auto 1.5rem}.hero-stats{display:flex;gap:2rem;justify-content:center;margin-top:1.5rem}.hero-stats .hs-item{text-align:center}.hero-stats .hs-num{font-size:1.6rem;color:var(--gold)}.hero-stats .hs-label{font-size:0.6rem;color:rgba(255,255,255,0.6);letter-spacing:0.12em;margin-top:2px}@media(max-width:768px){.hero-stats{gap:1rem}}section{padding:4rem 5vw;position:relative}.section-inner{max-width:1080px;margin:0 auto}.section-head{text-align:center;margin-bottom:2.5rem}.section-kicker{font-size:0.65rem;color:var(--gold);letter-spacing:0.2em;margin-bottom:0.6rem}.section-kicker::before,.section-kicker::after{content:'——';margin:0 6px;opacity:.5}.section-title{font-size:clamp(1.5rem,2.5vw,2.2rem);font-weight:400;letter-spacing:0.08em;color:var(--ink);margin-bottom:0.5rem}.section-sub{font-size:0.85rem;color:var(--ink-soft);max-width:640px;margin:0 auto;line-height:2}.intro-grid{display:grid;grid-template-columns:3fr 2fr;gap:2.5rem;align-items:start;margin-top:2rem}.intro-text p{font-size:0.88rem;color:var(--ink-soft);line-height:2.2;margin-bottom:0.8rem;letter-spacing:0.03em}.intro-text em{color:var(--ink);font-style:normal}.intro-specs{background:var(--panel);padding:1.5rem 2rem}.intro-specs h4{font-size:0.8rem;font-weight:400;color:var(--gold);letter-spacing:0.1em;margin-bottom:0.8rem}.intro-specs td{padding:0.5rem 0;font-size:0.82rem;color:var(--ink-soft);border-bottom:1px solid var(--smoke);width:50%}.intro-specs td:first-child{color:var(--ink)}@media(max-width:768px){.intro-grid{grid-template-columns:1fr;gap:1.5rem}}#applications{background:var(--panel);border-top:1px solid var(--smoke)}.app-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2rem}.app-card{background:var(--paper);padding:2rem;transition:all .3s;cursor:default}.app-card:hover{transform:translateY(-3px);box-shadow:0 4px 16px rgba(44,44,44,0.04)}.app-card .app-icon{font-size:1.6rem;margin-bottom:0.4rem}.app-card h4{font-size:0.95rem;font-weight:400;margin-bottom:0.3rem;letter-spacing:0.06em}.app-card .app-scene{font-size:0.72rem;color:var(--vermillion);margin-bottom:0.5rem;letter-spacing:0.04em}.app-card p{font-size:0.78rem;color:var(--ink-soft);line-height:1.8;margin-bottom:0.6rem}.app-card .app-example{font-size:0.72rem;color:var(--ink-fade);padding-left:12px;border-left:2px solid var(--ink-soft);font-style:italic}@media(max-width:768px){.app-grid{grid-template-columns:1fr}}.adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:2rem}.adv-card{border:1px solid var(--line);padding:1.5rem;text-align:center;background:var(--panel);transition:all .3s}.adv-card:hover{border-color:var(--gold);transform:translateY(-2px)}.adv-icon{font-size:1.8rem;margin-bottom:0.6rem;display:block}.adv-card h4{font-size:0.9rem;font-weight:400;margin-bottom:4px}.adv-card p{font-size:0.78rem;color:var(--ink-soft);line-height:1.8}.mat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px;margin-top:2rem}.mat-item{background:var(--panel);padding:1.5rem 1rem;text-align:center;transition:all .25s;cursor:default}.mat-item:hover{transform:translateY(-2px)}.mat-item .mat-img{font-size:2rem;margin-bottom:6px;display:block}.mat-item .mat-name{font-size:0.85rem;font-weight:400;margin-bottom:2px}.mat-item .mat-note{font-size:0.65rem;color:var(--ink-soft)}#pricing{background:var(--panel);border-top:1px solid var(--smoke)}.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:2rem}.price-card{background:var(--paper);padding:1.8rem;text-align:center;transition:all .3s;position:relative}.price-card:hover{transform:translateY(-3px);box-shadow:0 4px 16px rgba(44,44,44,0.04)}.price-card .p-name{font-size:0.9rem;color:var(--ink);margin-bottom:2px}.price-card .p-sub{font-size:0.7rem;color:var(--ink-fade);margin-bottom:0.6rem}.price-card .p-price{font-size:1.6rem;color:var(--vermillion);margin-bottom:2px}.price-card .p-note{font-size:0.68rem;color:var(--ink-fade)}.price-card.featured{border:1px solid rgba(201,169,110,0.3)}.price-card .p-badge{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:0.55rem;padding:2px 12px;letter-spacing:0.06em}.price-note{text-align:center;font-size:0.75rem;color:var(--ink-fade);margin-top:1rem}#gallery{border-top:1px solid var(--smoke)}.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:2rem}.gal-item{aspect-ratio:4/3;background-size:cover;background-position:center;transition:all .35s;cursor:pointer;position:relative}.gal-item:hover{filter:brightness(0.85);transform:scale(1.01)}.gal-item.tall{aspect-ratio:3/4;grid-row:span 2}.gal-item.wide{grid-column:span 2}@media(max-width:768px){.gal-grid{grid-template-columns:1fr 1fr}.gal-item.tall{grid-row:auto}.gal-item.wide{grid-column:auto}}.process-steps{display:grid;grid-template-columns:repeat(4,1fr);position:relative;margin-top:2rem}.process-steps::before{content:'';position:absolute;top:24px;left:28px;right:28px;height:1px;background:linear-gradient(90deg,var(--gold),var(--ink-soft),var(--gold));opacity:0.12}.ps-item{padding:0 16px 0 0;position:relative}.ps-num{width:48px;height:48px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--paper);margin-bottom:0.8rem;position:relative;z-index:1;font-size:0.65rem;color:var(--ink-soft);transition:all .3s}.ps-item:hover .ps-num{background:var(--vermillion);color:#fff;border-color:var(--vermillion)}.ps-title{font-size:0.9rem;font-weight:400;margin-bottom:4px;letter-spacing:0.06em}.ps-desc{font-size:0.78rem;color:var(--ink-soft);line-height:1.8}.ps-badge{display:inline-block;margin-top:4px;font-size:0.65rem;color:var(--gold)}@media(max-width:768px){.process-steps{grid-template-columns:1fr 1fr;gap:1.5rem 1rem}.process-steps::before{display:none}}#faq{background:var(--panel);border-top:1px solid var(--smoke)}.faq-list{max-width:640px;margin:2rem auto 0}.faq-item{border-bottom:1px solid var(--smoke);overflow:hidden}.faq-q{width:100%;padding:1rem 0;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:none;color:var(--ink);font-size:0.88rem;font-weight:400;cursor:pointer;text-align:left;letter-spacing:0.02em;transition:color .2s}.faq-q:hover{color:var(--gold)}.faq-arrow{flex-shrink:0;width:24px;height:24px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;transition:all .3s;color:var(--ink-soft)}.faq-item.open .faq-arrow{transform:rotate(45deg);border-color:var(--gold);color:var(--gold)}.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;font-size:0.82rem;color:var(--ink-soft);line-height:2}.faq-item.open .faq-a{max-height:500px;padding:0 0 1rem 0}#contact{text-align:center}.contact-cards{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:2rem 0}.c-card{background:var(--panel);border:1px solid var(--line);padding:1.2rem 2rem;min-width:150px;transition:all .25s;cursor:pointer;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:4px}.c-card:hover{border-color:var(--gold);transform:translateY(-2px)}.c-icon{font-size:1.2rem;display:block;margin-bottom:2px}.c-label{font-size:0.68rem;color:var(--ink-soft);letter-spacing:0.08em}.c-val{font-size:0.88rem;color:var(--vermillion);font-weight:400}footer{text-align:center;padding:2rem 5vw;border-top:1px solid var(--line)}footer .f-brand{font-size:0.9rem;color:var(--ink);letter-spacing:0.06em;margin-bottom:4px}footer .f-copy{font-size:0.72rem;color:var(--ink-fade);letter-spacing:0.04em}footer .f-links{display:flex;gap:1rem;justify-content:center;margin:0.8rem 0}footer .f-links a{font-size:0.72rem;color:var(--ink-soft);text-decoration:none;letter-spacing:0.06em}footer .f-links a:hover{color:var(--gold)}.back-top{position:fixed;bottom:24px;right:24px;z-index:100;width:36px;height:36px;background:var(--vermillion);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.9rem;opacity:0;transition:all .3s;pointer-events:none;box-shadow:0 4px 16px rgba(194,59,34,0.15)}.back-top.show{opacity:1;pointer-events:all}#toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);font-size:0.82rem;padding:8px 20px;letter-spacing:0.06em;opacity:0;transition:all .3s;z-index:9000;pointer-events:none}
+</style>
+</head>
+<body>
+<button class="back-top" id="backTop">↑</button>
+<nav>
+  <a href="瑞琴雅集_官网_v2.html" class="nav-back"><span class="arrow">←</span> 返回主页</a>
+  <span class="nav-title">瑞琴雅集 · CNC五轴加工</span>
+  <a href="#contact" class="nav-cta">获取报价</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('images/cnc-detail.jpg')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal visible">
+    <div class="hero-badge">雅艺 · 叁</div>
+    <h1>CNC五轴加工</h1>
+    <p>精密制造的极致。五轴联动技术，任意角度切入，一次装夹完成复杂曲面。精度达0.01mm。</p>
+    <div style="margin-top:1rem">
+      <a href="#contact" class="btn btn-primary">获取报价</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hs-item"><div class="hs-num">±0.01mm</div><div class="hs-label">加工精度</div></div>
+      <div class="hs-item"><div class="hs-num">五轴</div><div class="hs-label">联动轴数</div></div>
+      <div class="hs-item"><div class="hs-num">6种</div><div class="hs-label">适用材料</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">工艺概述</div>
+      <h2 class="section-title">毫厘之间见真章</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="intro-grid">
+      <div class="intro-text reveal">
+        <p>CNC五轴加工，是<em>精密制造的极致</em>。通过五轴联动技术，刀具可以从任意角度切入工件，<em>一次装夹完成复杂曲面加工</em>——无需多次翻面，精度更高、效率更快。</p>
+        <p>适合高强度、高硬度材料：铝合金、黄铜、不锈钢、硬木、大理石等。无论是<em>机械结构件、工业手板</em>，还是<em>黄铜铭牌、硬木工艺摆件</em>——CNC都能以最高的精度和强度呈现。</p>
+        <p>每件作品都经过严格检测校验，确保尺寸精准无误。表面处理可供选择：拉丝、喷砂、氧化、抛光、电镀，让作品不止于精密，更显品质。</p>
+      </div>
+      <div class="intro-specs reveal reveal-d1">
+        <h4>技术参数</h4>
+        <table>
+          <tr><td>加工精度</td><td>±0.01mm</td></tr>
+          <tr><td>轴数</td><td>五轴联动</td></tr>
+          <tr><td>最大加工尺寸</td><td>600 × 400 × 300mm</td></tr>
+          <tr><td>适用材料</td><td>铝合金 · 黄铜 · 不锈钢 · 硬木 · 大理石 · 塑料</td></tr>
+          <tr><td>表面处理</td><td>拉丝 · 喷砂 · 氧化 · 抛光 · 电镀</td></tr>
+          <tr><td>文件格式</td><td>STEP · IGES · DWG · STL</td></tr>
+          <tr><td>交期参考</td><td>3-7个工作日</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="applications">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">应用场景</div>
+      <h2 class="section-title">精密加工，无处不在</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="app-grid reveal">
+      <div class="app-card">
+        <span class="app-icon">⚙️</span>
+        <h4>机械零件加工</h4>
+        <div class="app-scene">场景：结构件 · 连接件 · 精密外壳</div>
+        <p>铝合金/不锈钢结构件、连接件、外壳。高精度装配，满足严苛公差要求。</p>
+        <div class="app-example">案例：为某机器人公司加工60套铝合金关节连接件，±0.02mm公差，零不良率交付。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🏅</span>
+        <h4>黄铜铭牌奖牌</h4>
+        <div class="app-scene">场景：企业Logo · 设备铭牌 · 纪念奖牌</div>
+        <p>黄铜/不锈钢铭牌，激光刻字+CNC雕刻底纹，表面拉丝或抛光处理，高级感十足。</p>
+        <div class="app-example">案例：某高端品牌定制200块黄铜Logo铭牌，拉丝面+镜面倒角，安装于旗舰店入口。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🪵</span>
+        <h4>硬木工艺雕刻</h4>
+        <div class="app-scene">场景：红木摆件 · 实木雕刻 · 异形曲面</div>
+        <p>红木、胡桃木、橡木等硬木精密雕刻。刀路精准，表面光洁，适合高档家具配件、工艺品。</p>
+        <div class="app-example">案例：为茶室定制红木茶盘，CNC雕刻山水纹理，表面抛光处理，浑然天成的艺术感。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🪨</span>
+        <h4>大理石石材雕刻</h4>
+        <div class="app-scene">场景：石材雕刻 · 纪念碑 · 装饰板材</div>
+        <p>天然大理石、花岗岩精密雕刻。适合墓碑刻字、建筑装饰、石材艺术品。五轴联动可做立体浮雕。</p>
+        <div class="app-example">案例：为某陵园定制50块花岗岩墓碑，文字深度一致，抛光面如镜，家属十分满意。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🚗</span>
+        <h4>汽车改装定制</h4>
+        <div class="app-scene">场景：改装配件 · 内饰件 · 标牌</div>
+        <p>汽车改装零件、定制内饰件、金属标牌。小批量定制，满足个性化改装需求。</p>
+        <div class="app-example">案例：为改装车友会定制30套铝合金换挡拨片，阳极氧化上色，精度媲美原厂件。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">✈️</span>
+        <h4>模具与电极加工</h4>
+        <div class="app-scene">场景：注塑模具 · 压铸模 · 电极</div>
+        <p>注塑模具、压铸模型芯、EDM电极。五轴加工模具曲面，表面质量高，减少后续抛光工作量。</p>
+        <div class="app-example">案例：某注塑厂需要一副复杂曲面模具镶件，五轴一次装夹加工完成，比传统三轴省去3次翻面。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">核心优势</div>
+      <h2 class="section-title">为何选择CNC五轴</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="adv-grid reveal">
+      <div class="adv-card"><span class="adv-icon">🎯</span><h4>极致精度</h4><p>±0.01mm，满足最严苛的装配和功能要求。航空级加工品质。</p></div>
+      <div class="adv-card"><span class="adv-icon">🔄</span><h4>五轴联动</h4><p>任意角度切入，复杂曲面一次装夹完成。无需翻面，减少累计误差。</p></div>
+      <div class="adv-card"><span class="adv-icon">💪</span><h4>硬度无限制</h4><p>金属、硬木、石材——越硬的材料越能体现CNC优势。不锈钢、淬火钢不在话下。</p></div>
+      <div class="adv-card"><span class="adv-icon">✨</span><h4>表面品质</h4><p>多种后处理可选：拉丝、喷砂、氧化（可染色）、抛光、电镀。</p></div>
+      <div class="adv-card"><span class="adv-icon">🔬</span><h4>全检交付</h4><p>三坐标检测仪校验，提供检测报告。每件可追溯，品质有保障。</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="materials">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">加工材料</div>
+      <h2 class="section-title">无所不精的材料实力</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="mat-grid reveal">
+      <div class="mat-item"><span class="mat-img">🔩</span><div class="mat-name">铝合金</div><div class="mat-note">轻量高强，常用</div></div>
+      <div class="mat-item"><span class="mat-img">✨</span><div class="mat-name">黄铜</div><div class="mat-note">复古高级，易加工</div></div>
+      <div class="mat-item"><span class="mat-img">⚪</span><div class="mat-name">不锈钢</div><div class="mat-note">耐腐蚀，高强度</div></div>
+      <div class="mat-item"><span class="mat-img">🪵</span><div class="mat-name">硬木</div><div class="mat-note">红木/胡桃木/橡木</div></div>
+      <div class="mat-item"><span class="mat-img">🪨</span><div class="mat-name">大理石</div><div class="mat-note">奢华沉稳，精雕细琢</div></div>
+      <div class="mat-item"><span class="mat-img">🧩</span><div class="mat-name">工程塑料</div><div class="mat-note">POM/尼龙/PE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">加工流程</div>
+      <h2 class="section-title">四步完成精密加工</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="process-steps reveal">
+      <div class="ps-item"><div class="ps-num">壹</div><div class="ps-title">发图评估</div><div class="ps-desc">发送3D图纸或2D工程图</div><div class="ps-badge">⚡2小时回复</div></div>
+      <div class="ps-item"><div class="ps-num">贰</div><div class="ps-title">工艺确认</div><div class="ps-desc">确认工艺方案、报价、交期</div><div class="ps-badge">📋免费评估</div></div>
+      <div class="ps-item"><div class="ps-num">叁</div><div class="ps-title">精密加工</div><div class="ps-desc">CAM编程、五轴加工、检测</div><div class="ps-badge">🔬全检</div></div>
+      <div class="ps-item"><div class="ps-num">肆</div><div class="ps-title">交付验收</div><div class="ps-desc">完工检测报告，发货</div><div class="ps-badge">📄提供报告</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="gallery">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">作品展示</div>
+      <h2 class="section-title">CNC精密加工作品</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="gal-grid reveal">
+      <div class="gal-item wide" style="background-image:url('images/cnc-brass.jpg')"></div>
+      <div class="gal-item tall" style="background-image:url('images/cnc-part.jpg')"></div>
+      <div class="gal-item" style="background-image:url('images/cnc-wood.jpg')"></div>
+      <div class="gal-item" style="background-image:url('images/cnc-detail.jpg')"></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="pricing">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">价格透明</div>
+      <h2 class="section-title">按需报价，公平透明</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="price-grid reveal">
+      <div class="price-card"><div class="p-name">黄铜铭牌</div><div class="p-sub">含表面处理</div><div class="p-price">¥120起</div><div class="p-note">拉丝/喷砂</div></div>
+      <div class="price-card featured"><div class="p-badge">热销</div><div class="p-name">铝合金零件</div><div class="p-sub">按工时计</div><div class="p-price">¥80起</div><div class="p-note">含编程费</div></div>
+      <div class="price-card"><div class="p-name">硬木雕刻</div><div class="p-sub">复杂曲面</div><div class="p-price">¥150起</div><div class="p-note">含抛光</div></div>
+      <div class="price-card"><div class="p-name">批量加工</div><div class="p-sub">按图纸报价</div><div class="p-price">询价</div><div class="p-note">小批量优惠</div></div>
+    </div>
+    <p class="price-note">以上为参考基准价 · CNC加工按工时+材料费综合报价 · 量大从优</p>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="faq">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">常见问题</div>
+      <h2 class="section-title">关于CNC加工</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><button class="faq-q">CNC和3D打印有什么区别？怎么选？<div class="faq-arrow">+</div></button><div class="faq-a">CNC是减材加工（从材料中切除多余部分），3D打印是增材（层层堆积）。简单说：需要金属零件、高精度、高强度→选CNC；需要复杂造型、快速原型、无需开模→选3D打印。也可以两者结合使用。</div></div>
+      <div class="faq-item"><button class="faq-q">最硬的材料能加工什么？<div class="faq-arrow">+</div></button><div class="faq-a">铝合金、黄铜、不锈钢、淬火钢（HRC50以下）、大理石、陶瓷（需专用刀具）均可。五轴联动可加工复杂曲面和深腔结构。</div></div>
+      <div class="faq-item"><button class="faq-q">表面处理有哪些选择？<div class="faq-arrow">+</div></button><div class="faq-a">拉丝（直纹/乱纹）、喷砂（细砂/粗砂）、阳极氧化（可染黑色/红色/金色等）、抛光（镜面/亚光）、电镀（镀镍/镀铬/镀金）。根据应用场景推荐最佳方案。</div></div>
+      <div class="faq-item"><button class="faq-q">最小起订量多少？单件做吗？<div class="faq-arrow">+</div></button><div class="faq-a">单件即做，无最低起订量。单件适合打样验证，但编程时间固定，单件单价较高。批量5件以上价格更优。</div></div>
+      <div class="faq-item"><button class="faq-q">图纸有什么要求？<div class="faq-arrow">+</div></button><div class="faq-a">最好提供3D模型（STEP/IGES格式）+ 2D工程图（标注公差和表面要求）。无图纸也可来样扫描逆向建模。</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">开始定制</div>
+      <h2 class="section-title">发图纸获取CNC报价</h2>
+      <p class="section-sub">发送3D图纸或2D工程图，两小时内回复。也欢迎咨询材料选择、表面处理方案。</p>
+      <div class="section-sash"></div>
+    </div>
+    <div class="contact-cards reveal">
+      <div class="c-card" onclick="copyWx()"><span class="c-icon">💬</span><span class="c-label">微信</span><span class="c-val">stopshow2</span></div>
+      <a href="tel:18688462968" class="c-card"><span class="c-icon">📞</span><span class="c-label">电话</span><span class="c-val">18688462968</span></a>
+      <a href="mailto:yixue990928@163.com" class="c-card"><span class="c-icon">📧</span><span class="c-label">邮箱</span><span class="c-val">yixue990928@163.com</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f-links"><a href="瑞琴雅集_官网_v2.html">主页</a><a href="#contact">联系</a></div>
+  <div class="f-brand">瑞琴雅集创客工作室</div>
+  <div class="f-copy">广州 · 白云 | 微信：stopshow2 | 电话：18688462968</div>
+</footer>
+<div id="toast">微信号已复制 ✓</div>
+<script>
+const backTop=document.getElementById('backTop');
+window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>300));
+backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const observer=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('.faq-q').forEach(b=>{b.addEventListener('click',()=>{const i=b.parentElement,w=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));if(!w)i.classList.add('open')})});
+let tt;function copyWx(){navigator.clipboard.writeText('stopshow2');const e=document.getElementById('toast');e.style.opacity='1';e.style.transform='translateX(-50%) translateY(0)';clearTimeout(tt);tt=setTimeout(()=>{e.style.opacity='0';e.style.transform='translateX(-50%) translateY(20px)'},1800)}
+</script>
+</body>
+</html>

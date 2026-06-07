@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D打印 · 瑞琴雅集创客工作室</title>
+<meta name="description" content="瑞琴雅集 · 3D打印定制。复杂立体造型、功能原型一次成型。PLA、树脂、全彩可选。快速迭代，无需开模。">
+<meta name="theme-color" content="#EDE4D8">
+<link rel="icon" href="images/logo.png" type="image/png">
+<style>
+:root{--ink:#2C2C2C;--ink-soft:#6B6560;--ink-fade:#9A928A;--paper:#EDE4D8;--paper-deep:#E3D9CB;--vermillion:#C23B22;--gold:#C9A96E;--celadon:#7BA388;--panel:#F2EBE3;--line:#D9CFC3;--smoke:rgba(0,0,0,0.05)}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'Kaiti SC','楷体-简','华文楷体',KaiTi,'STKaiti','Noto Serif SC','Songti SC',serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:2}::selection{background:var(--gold);color:#fff}::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--paper)}::-webkit-scrollbar-thumb{background:var(--ink-fade);border-radius:2px}body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 1px,rgba(201,169,110,0.08) 1px,rgba(201,169,110,0.08) 2px),repeating-linear-gradient(90deg,transparent,transparent 3px,rgba(123,163,136,0.05) 3px,rgba(123,163,136,0.05) 4px)}.reveal{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}.section-sash{width:48px;height:3px;margin:1.2rem auto 0;background:linear-gradient(90deg,var(--gold) 0%,var(--gold) 20%,var(--gold) 60%,transparent 100%);border-radius:2px}.ink-brush{width:100%;height:14px;margin:0;background:linear-gradient(90deg,transparent 0%,rgba(44,44,44,0.4) 5%,rgba(44,44,44,0.5) 18%,rgba(44,44,44,0.35) 35%,rgba(44,44,44,0.2) 55%,rgba(44,44,44,0.08) 75%,transparent 100%);border-radius:5px}.ink-brush::after{content:'';position:absolute;top:4px;left:8%;right:8%;height:6px;background:linear-gradient(90deg,transparent,rgba(201,169,110,0.5) 25%,rgba(201,169,110,0.3) 55%,transparent)}.btn{display:inline-flex;align-items:center;gap:6px;padding:0.7rem 1.8rem;font-size:0.85rem;font-weight:400;text-decoration:none;letter-spacing:0.08em;transition:all .3s;cursor:pointer;border:none;line-height:1.5;border-radius:2px}.btn-primary{background:var(--vermillion);color:#fff}.btn-primary:hover{opacity:.88;transform:translateY(-2px)}.btn-outline{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:60px;background:rgba(237,228,216,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--smoke)}.nav-back{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink-soft);font-size:0.82rem;letter-spacing:0.06em;transition:color .2s}.nav-back:hover{color:var(--vermillion)}.nav-back .arrow{font-size:1rem}.nav-title{font-size:0.85rem;color:var(--ink);letter-spacing:0.1em}.nav-cta{padding:6px 20px;background:var(--vermillion);color:#fff;font-size:0.75rem;text-decoration:none;letter-spacing:0.06em;transition:opacity .2s}.nav-cta:hover{opacity:.85}@media(max-width:768px){.nav-title{display:none}}.hero{min-height:70vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;text-align:center;padding:6rem 5vw 4rem}.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(0.45)}.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,var(--paper) 100%)}.hero-content{position:relative;z-index:2;color:#fff;max-width:700px}.hero-badge{font-size:0.7rem;letter-spacing:0.3em;color:var(--gold);margin-bottom:0.6rem;opacity:0.9}.hero-content h1{font-size:clamp(2.2rem,5vw,4rem);font-weight:400;letter-spacing:0.08em;margin-bottom:0.8rem;line-height:1.15}.hero-content p{font-size:0.95rem;color:rgba(255,255,255,0.85);line-height:1.8;max-width:520px;margin:0 auto 1.5rem}.hero-stats{display:flex;gap:2rem;justify-content:center;margin-top:1.5rem}.hero-stats .hs-item{text-align:center}.hero-stats .hs-num{font-size:1.6rem;color:var(--gold)}.hero-stats .hs-label{font-size:0.6rem;color:rgba(255,255,255,0.6);letter-spacing:0.12em;margin-top:2px}@media(max-width:768px){.hero-stats{gap:1rem}}section{padding:4rem 5vw;position:relative}.section-inner{max-width:1080px;margin:0 auto}.section-head{text-align:center;margin-bottom:2.5rem}.section-kicker{font-size:0.65rem;color:var(--gold);letter-spacing:0.2em;margin-bottom:0.6rem}.section-kicker::before,.section-kicker::after{content:'——';margin:0 6px;opacity:.5}.section-title{font-size:clamp(1.5rem,2.5vw,2.2rem);font-weight:400;letter-spacing:0.08em;color:var(--ink);margin-bottom:0.5rem}.section-sub{font-size:0.85rem;color:var(--ink-soft);max-width:640px;margin:0 auto;line-height:2}.intro-grid{display:grid;grid-template-columns:3fr 2fr;gap:2.5rem;align-items:start;margin-top:2rem}.intro-text p{font-size:0.88rem;color:var(--ink-soft);line-height:2.2;margin-bottom:0.8rem;letter-spacing:0.03em}.intro-text em{color:var(--ink);font-style:normal}.intro-specs{background:var(--panel);padding:1.5rem 2rem}.intro-specs h4{font-size:0.8rem;font-weight:400;color:var(--gold);letter-spacing:0.1em;margin-bottom:0.8rem}.intro-specs td{padding:0.5rem 0;font-size:0.82rem;color:var(--ink-soft);border-bottom:1px solid var(--smoke);width:50%}.intro-specs td:first-child{color:var(--ink)}@media(max-width:768px){.intro-grid{grid-template-columns:1fr;gap:1.5rem}}#applications{background:var(--panel);border-top:1px solid var(--smoke)}.app-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2rem}.app-card{background:var(--paper);padding:2rem;transition:all .3s;cursor:default}.app-card:hover{transform:translateY(-3px);box-shadow:0 4px 16px rgba(44,44,44,0.04)}.app-card .app-icon{font-size:1.6rem;margin-bottom:0.4rem}.app-card h4{font-size:0.95rem;font-weight:400;margin-bottom:0.3rem;letter-spacing:0.06em}.app-card .app-scene{font-size:0.72rem;color:var(--vermillion);margin-bottom:0.5rem;letter-spacing:0.04em}.app-card p{font-size:0.78rem;color:var(--ink-soft);line-height:1.8;margin-bottom:0.6rem}.app-card .app-example{font-size:0.72rem;color:var(--ink-fade);padding-left:12px;border-left:2px solid var(--celadon);font-style:italic}@media(max-width:768px){.app-grid{grid-template-columns:1fr}}.adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:2rem}.adv-card{border:1px solid var(--line);padding:1.5rem;text-align:center;background:var(--panel);transition:all .3s}.adv-card:hover{border-color:var(--gold);transform:translateY(-2px)}.adv-icon{font-size:1.8rem;margin-bottom:0.6rem;display:block}.adv-card h4{font-size:0.9rem;font-weight:400;margin-bottom:4px}.adv-card p{font-size:0.78rem;color:var(--ink-soft);line-height:1.8}.mat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px;margin-top:2rem}.mat-item{background:var(--panel);padding:1.5rem 1rem;text-align:center;transition:all .25s;cursor:default}.mat-item:hover{transform:translateY(-2px)}.mat-item .mat-img{font-size:2rem;margin-bottom:6px;display:block}.mat-item .mat-name{font-size:0.85rem;font-weight:400;margin-bottom:2px}.mat-item .mat-note{font-size:0.65rem;color:var(--ink-soft)}#pricing{background:var(--panel);border-top:1px solid var(--smoke)}.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:2rem}.price-card{background:var(--paper);padding:1.8rem;text-align:center;transition:all .3s;position:relative}.price-card:hover{transform:translateY(-3px);box-shadow:0 4px 16px rgba(44,44,44,0.04)}.price-card .p-name{font-size:0.9rem;color:var(--ink);margin-bottom:2px}.price-card .p-sub{font-size:0.7rem;color:var(--ink-fade);margin-bottom:0.6rem}.price-card .p-price{font-size:1.6rem;color:var(--vermillion);margin-bottom:2px}.price-card .p-note{font-size:0.68rem;color:var(--ink-fade)}.price-card.featured{border:1px solid rgba(201,169,110,0.3)}.price-card .p-badge{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:0.55rem;padding:2px 12px;letter-spacing:0.06em}.price-note{text-align:center;font-size:0.75rem;color:var(--ink-fade);margin-top:1rem}#gallery{border-top:1px solid var(--smoke)}.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:2rem}.gal-item{aspect-ratio:4/3;background-size:cover;background-position:center;transition:all .35s;cursor:pointer;position:relative}.gal-item:hover{filter:brightness(0.85);transform:scale(1.01)}.gal-item.tall{aspect-ratio:3/4;grid-row:span 2}.gal-item.wide{grid-column:span 2}@media(max-width:768px){.gal-grid{grid-template-columns:1fr 1fr}.gal-item.tall{grid-row:auto}.gal-item.wide{grid-column:auto}}.process-steps{display:grid;grid-template-columns:repeat(4,1fr);position:relative;margin-top:2rem}.process-steps::before{content:'';position:absolute;top:24px;left:28px;right:28px;height:1px;background:linear-gradient(90deg,var(--gold),var(--celadon),var(--gold));opacity:0.12}.ps-item{padding:0 16px 0 0;position:relative}.ps-num{width:48px;height:48px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--paper);margin-bottom:0.8rem;position:relative;z-index:1;font-size:0.65rem;color:var(--ink-soft);transition:all .3s}.ps-item:hover .ps-num{background:var(--vermillion);color:#fff;border-color:var(--vermillion)}.ps-title{font-size:0.9rem;font-weight:400;margin-bottom:4px;letter-spacing:0.06em}.ps-desc{font-size:0.78rem;color:var(--ink-soft);line-height:1.8}.ps-badge{display:inline-block;margin-top:4px;font-size:0.65rem;color:var(--gold)}@media(max-width:768px){.process-steps{grid-template-columns:1fr 1fr;gap:1.5rem 1rem}.process-steps::before{display:none}}#faq{background:var(--panel);border-top:1px solid var(--smoke)}.faq-list{max-width:640px;margin:2rem auto 0}.faq-item{border-bottom:1px solid var(--smoke);overflow:hidden}.faq-q{width:100%;padding:1rem 0;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:none;color:var(--ink);font-size:0.88rem;font-weight:400;cursor:pointer;text-align:left;letter-spacing:0.02em;transition:color .2s}.faq-q:hover{color:var(--gold)}.faq-arrow{flex-shrink:0;width:24px;height:24px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;transition:all .3s;color:var(--ink-soft)}.faq-item.open .faq-arrow{transform:rotate(45deg);border-color:var(--gold);color:var(--gold)}.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;font-size:0.82rem;color:var(--ink-soft);line-height:2}.faq-item.open .faq-a{max-height:500px;padding:0 0 1rem 0}#contact{text-align:center}.contact-cards{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:2rem 0}.c-card{background:var(--panel);border:1px solid var(--line);padding:1.2rem 2rem;min-width:150px;transition:all .25s;cursor:pointer;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:4px}.c-card:hover{border-color:var(--gold);transform:translateY(-2px)}.c-icon{font-size:1.2rem;display:block;margin-bottom:2px}.c-label{font-size:0.68rem;color:var(--ink-soft);letter-spacing:0.08em}.c-val{font-size:0.88rem;color:var(--vermillion);font-weight:400}footer{text-align:center;padding:2rem 5vw;border-top:1px solid var(--line)}footer .f-brand{font-size:0.9rem;color:var(--ink);letter-spacing:0.06em;margin-bottom:4px}footer .f-copy{font-size:0.72rem;color:var(--ink-fade);letter-spacing:0.04em}footer .f-links{display:flex;gap:1rem;justify-content:center;margin:0.8rem 0}footer .f-links a{font-size:0.72rem;color:var(--ink-soft);text-decoration:none;letter-spacing:0.06em}footer .f-links a:hover{color:var(--gold)}.back-top{position:fixed;bottom:24px;right:24px;z-index:100;width:36px;height:36px;background:var(--vermillion);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.9rem;opacity:0;transition:all .3s;pointer-events:none;box-shadow:0 4px 16px rgba(194,59,34,0.15)}.back-top.show{opacity:1;pointer-events:all}#toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);font-size:0.82rem;padding:8px 20px;letter-spacing:0.06em;opacity:0;transition:all .3s;z-index:9000;pointer-events:none}
+</style>
+</head>
+<body>
+<button class="back-top" id="backTop">↑</button>
+<nav>
+  <a href="瑞琴雅集_官网_v2.html" class="nav-back"><span class="arrow">←</span> 返回主页</a>
+  <span class="nav-title">瑞琴雅集 · 3D打印</span>
+  <a href="#contact" class="nav-cta">获取报价</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('images/3d-detail.jpg')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal visible">
+    <div class="hero-badge">雅艺 · 贰</div>
+    <h1>3D打印</h1>
+    <p>从无到有，"长"出实物。复杂立体造型、功能原型，一次成型。快速迭代，无需模具费。</p>
+    <div style="margin-top:1rem">
+      <a href="#contact" class="btn btn-primary">获取报价</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hs-item"><div class="hs-num">0.05mm</div><div class="hs-label">层厚精度</div></div>
+      <div class="hs-item"><div class="hs-num">280×300</div><div class="hs-label">最大尺寸mm</div></div>
+      <div class="hs-item"><div class="hs-num">5种</div><div class="hs-label">可用材料</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">工艺概述</div>
+      <h2 class="section-title">从虚拟到实体的桥梁</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="intro-grid">
+      <div class="intro-text reveal">
+        <p>3D打印，即增材制造——将数字模型<em>层层堆叠</em>，从无到有"生长"出实物。与传统减材加工不同，3D打印<em>无需模具、无需刀具</em>，特别适合复杂造型、异形结构和功能原型验证。</p>
+        <p>从创意手办、建筑模型、产品原型，到医疗辅助器具、机械结构件——<em>只要想得到，就能打得出来</em>。支持多种材料：PLA（经济实用）、树脂（高精度/全彩）、ABS（高强度）、TPU（柔性），满足不同场景需求。</p>
+        <p>我们提供设计优化建议，帮助你在保证质量的前提下控制成本。从草图到实物，<em>快速迭代，无需开模</em>。</p>
+      </div>
+      <div class="intro-specs reveal reveal-d1">
+        <h4>技术参数</h4>
+        <table>
+          <tr><td>打印精度</td><td>0.05mm层厚</td></tr>
+          <tr><td>最大尺寸</td><td>280 × 300 × 300mm</td></tr>
+          <tr><td>适用材料</td><td>PLA · ABS · 树脂 · TPU · 碳纤维</td></tr>
+          <tr><td>后处理</td><td>打磨 · 上色 · 组装</td></tr>
+          <tr><td>文件格式</td><td>STL · OBJ · STEP · 3MF</td></tr>
+          <tr><td>设计优化</td><td>免费评估可打印性</td></tr>
+          <tr><td>交期参考</td><td>2-5个工作日</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="applications">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">应用场景</div>
+      <h2 class="section-title">创意无界，打印无限</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="app-grid reveal">
+      <div class="app-card">
+        <span class="app-icon">🏗️</span>
+        <h4>建筑模型</h4>
+        <div class="app-scene">场景：方案投标 · 结构展示 · 教学模型</div>
+        <p>比例模型、结构展示、投标用模型。细节丰富，快速出样。大楼窗框、阳台栏杆等细节一次成型。</p>
+        <div class="app-example">案例：某建筑设计院为投标制作1:200比例商业综合体模型，3天交付，精准还原曲面幕墙。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🎮</span>
+        <h4>手办模型</h4>
+        <div class="app-scene">场景：游戏周边 · 动漫手办 · 创意摆件</div>
+        <p>游戏角色、动漫周边、创意摆件。树脂全彩打印，色彩丰富无需后期上色。</p>
+        <div class="app-example">案例：客户定制游戏原创角色手办，全彩树脂打印，50μm层厚还原武器纹理和面部表情。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">⚙️</span>
+        <h4>功能原型验证</h4>
+        <div class="app-scene">场景：产品开发 · 装配测试 · 功能验证</div>
+        <p>产品原型快速打样，结构测试、装配验证。一天可修改多次，大幅缩短开发周期。</p>
+        <div class="app-example">案例：某硬件初创公司3周内迭代12版无人机机架原型，从概念到可飞测试件，省开模费5万元+。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🎁</span>
+        <h4>个性化礼品</h4>
+        <div class="app-scene">场景：人像定制 · 纪念品 · 创意礼物</div>
+        <p>定制人像雕塑、立体照片、纪念品、生日礼物。不怕复杂造型，独一无二。</p>
+        <div class="app-example">案例：情侣定制双人半身雕塑立像，根据合照建模，树脂打印+手工上色，作为结婚周年礼物。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🔧</span>
+        <h4>工装夹具</h4>
+        <div class="app-scene">场景：生产线工具 · 检具 · 定位夹具</div>
+        <p>生产线辅助工具、检具、定位夹具。快速经济地解决生产现场问题。</p>
+        <div class="app-example">案例：某电子厂需要10个异形PCB板焊接夹具，3D打印一天搞定，比CNC加工省时80%、省钱60%。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🏥</span>
+        <h4>医疗辅助</h4>
+        <div class="app-scene">场景：康复辅具 · 教学模型 · 手术导板</div>
+        <p>个性化康复辅具、解剖教学模型、手术规划模型。生物相容材料可用。</p>
+        <div class="app-example">案例：为骨科医生定制患者-specific 骨折模型，用于术前规划和患者沟通，手术时间缩短30%。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">核心优势</div>
+      <h2 class="section-title">为何选择3D打印</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="adv-grid reveal">
+      <div class="adv-card"><span class="adv-icon">🔄</span><h4>无需开模</h4><p>直接由数字模型生成实物，节省数万元模具费。适合小批量生产和原型验证。</p></div>
+      <div class="adv-card"><span class="adv-icon">🎨</span><h4>复杂造型</h4><p>任意复杂几何结构、内部空腔、镂空，一次成型。传统工艺难以做到的，3D打印轻松实现。</p></div>
+      <div class="adv-card"><span class="adv-icon">⚡</span><h4>快速迭代</h4><p>设计→打印→测试→修改，一天可完成多次循环。产品开发周期缩短50%以上。</p></div>
+      <div class="adv-card"><span class="adv-icon">🎭</span><h4>全彩打印</h4><p>树脂全彩打印，无需后期上色，色彩丰富饱满。多色一体成型，细节惊艳。</p></div>
+      <div class="adv-card"><span class="adv-icon">📏</span><h4>高精度</h4><p>0.05mm层厚，表面细腻。树脂打印接近注塑表面品质，适合对精度要求高的应用。</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="materials">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">适用材料</div>
+      <h2 class="section-title">因材施印，各显其能</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="mat-grid reveal">
+      <div class="mat-item"><span class="mat-img">🧵</span><div class="mat-name">PLA</div><div class="mat-note">经济耐用，环保</div></div>
+      <div class="mat-item"><span class="mat-img">💪</span><div class="mat-name">ABS</div><div class="mat-note">高强度，耐热</div></div>
+      <div class="mat-item"><span class="mat-img">✨</span><div class="mat-name">树脂</div><div class="mat-note">高精度，表面细腻</div></div>
+      <div class="mat-item"><span class="mat-img">🎨</span><div class="mat-name">全彩树脂</div><div class="mat-note">色彩丰富，免上色</div></div>
+      <div class="mat-item"><span class="mat-img">🫧</span><div class="mat-name">TPU</div><div class="mat-note">柔性材料，弹性</div></div>
+      <div class="mat-item"><span class="mat-img">⚫</span><div class="mat-name">碳纤维</div><div class="mat-note">高强度，轻量化</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">制作流程</div>
+      <h2 class="section-title">四步完成打印</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="process-steps reveal">
+      <div class="ps-item"><div class="ps-num">壹</div><div class="ps-title">发模型/草图</div><div class="ps-desc">发送STL文件或参考草图</div><div class="ps-badge">⚡5分钟回复</div></div>
+      <div class="ps-item"><div class="ps-num">贰</div><div class="ps-title">打印评估</div><div class="ps-desc">可打印性分析、材料推荐、报价</div><div class="ps-badge">📋免费评估</div></div>
+      <div class="ps-item"><div class="ps-num">叁</div><div class="ps-title">打印后处理</div><div class="ps-desc">打印、打磨、上色、组装</div><div class="ps-badge">📸同步进度</div></div>
+      <div class="ps-item"><div class="ps-num">肆</div><div class="ps-title">验收发货</div><div class="ps-desc">实物确认，顺丰发货</div><div class="ps-badge">🚚全国送达</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="gallery">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">作品展示</div>
+      <h2 class="section-title">3D打印作品</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="gal-grid reveal">
+      <div class="gal-item wide" style="background-image:url('images/3d-print.jpg')"></div>
+      <div class="gal-item tall" style="background-image:url('images/3d-figure.jpg')"></div>
+      <div class="gal-item" style="background-image:url('images/3d-prototype.jpg')"></div>
+      <div class="gal-item" style="background-image:url('images/3d-detail.jpg')"></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="pricing">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">价格透明</div>
+      <h2 class="section-title">丰俭由人的定价</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="price-grid reveal">
+      <div class="price-card"><div class="p-name">PLA打印</div><div class="p-sub">经济实用</div><div class="p-price">¥1/g</div><div class="p-note">大尺寸首选</div></div>
+      <div class="price-card featured"><div class="p-badge">热销</div><div class="p-name">树脂打印</div><div class="p-sub">高精度/全彩</div><div class="p-price">¥3/g</div><div class="p-note">细节丰富</div></div>
+      <div class="price-card"><div class="p-name">手办定制</div><div class="p-sub">含后处理</div><div class="p-price">¥80起</div><div class="p-note">打磨上色</div></div>
+      <div class="price-card"><div class="p-name">批量打印</div><div class="p-sub">小批量生产</div><div class="p-price">询价</div><div class="p-note">10件起折扣</div></div>
+    </div>
+    <p class="price-note">以上为参考基准价 · 按模型体积和复杂度精准报价</p>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="faq">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">常见问题</div>
+      <h2 class="section-title">关于3D打印</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><button class="faq-q">我没有3D模型文件怎么办？<div class="faq-arrow">+</div></button><div class="faq-a">发参考图或描述您的想法，我们可以代为建模。简单模型免费处理，复杂模型按工时收费。也支持实物扫描逆向建模（需额外收费）。</div></div>
+      <div class="faq-item"><button class="faq-q">打出来的东西要自己打磨吗？<div class="faq-arrow">+</div></button><div class="faq-a">不需要。我们提供完整的后处理服务：去支撑、打磨、上色、组装。交到您手上的就是成品。如需表面更光滑，可做抛光处理。</div></div>
+      <div class="faq-item"><button class="faq-q">3D打印结实吗？<div class="faq-arrow">+</div></button><div class="faq-a">取决于材料和填充密度。PLA和ABS有足够强度用于展示和功能验证。如需高强度，可选碳纤维增强材料或尼龙。树脂打印较脆，适合摆件。</div></div>
+      <div class="faq-item"><button class="faq-q">能做多大？精度多高？<div class="faq-arrow">+</div></button><div class="faq-a">标准最大280×300×300mm。如需更大可拼接（如建筑模型分块打印后粘合）。树脂打印层厚可达0.05mm，表面细腻，接近注塑品质。</div></div>
+      <div class="faq-item"><button class="faq-q">批量打印有优惠吗？<div class="faq-arrow">+</div></button><div class="faq-a">10件以上可享批量折扣。同一模型批量打印，摊薄人工成本后价格更优。欢迎来图询价。</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">开始定制</div>
+      <h2 class="section-title">发模型获取3D打印报价</h2>
+      <p class="section-sub">发送STL文件或参考图，五分钟内回复。也欢迎咨询材料选择、设计优化建议。</p>
+      <div class="section-sash"></div>
+    </div>
+    <div class="contact-cards reveal">
+      <div class="c-card" onclick="copyWx()"><span class="c-icon">💬</span><span class="c-label">微信</span><span class="c-val">stopshow2</span></div>
+      <a href="tel:18688462968" class="c-card"><span class="c-icon">📞</span><span class="c-label">电话</span><span class="c-val">18688462968</span></a>
+      <a href="mailto:yixue990928@163.com" class="c-card"><span class="c-icon">📧</span><span class="c-label">邮箱</span><span class="c-val">yixue990928@163.com</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f-links"><a href="瑞琴雅集_官网_v2.html">主页</a><a href="#contact">联系</a></div>
+  <div class="f-brand">瑞琴雅集创客工作室</div>
+  <div class="f-copy">广州 · 白云 | 微信：stopshow2 | 电话：18688462968</div>
+</footer>
+<div id="toast">微信号已复制 ✓</div>
+<script>
+const backTop=document.getElementById('backTop');
+window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>300));
+backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const observer=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('.faq-q').forEach(b=>{b.addEventListener('click',()=>{const i=b.parentElement,w=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));if(!w)i.classList.add('open')})});
+let tt;function copyWx(){navigator.clipboard.writeText('stopshow2');const e=document.getElementById('toast');e.style.opacity='1';e.style.transform='translateX(-50%) translateY(0)';clearTimeout(tt);tt=setTimeout(()=>{e.style.opacity='0';e.style.transform='translateX(-50%) translateY(20px)'},1800)}
+</script>
+</body>
+</html>

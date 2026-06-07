@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>激光雕刻 · 瑞琴雅集创客工作室</title>
+<meta name="description" content="瑞琴雅集 · 激光雕刻定制。高精度图案、文字、照片还原。木材、亚克力、皮革皆可。单件起做，24小时出图。">
+<meta name="theme-color" content="#EDE4D8">
+<link rel="icon" href="images/logo.png" type="image/png">
+<style>
+:root{--ink:#2C2C2C;--ink-soft:#6B6560;--ink-fade:#9A928A;--paper:#EDE4D8;--paper-deep:#E3D9CB;--vermillion:#C23B22;--gold:#C9A96E;--celadon:#7BA388;--panel:#F2EBE3;--line:#D9CFC3;--smoke:rgba(0,0,0,0.05)}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'Kaiti SC','楷体-简','华文楷体',KaiTi,'STKaiti','Noto Serif SC','Songti SC',serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:2}::selection{background:var(--gold);color:#fff}::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--paper)}::-webkit-scrollbar-thumb{background:var(--ink-fade);border-radius:2px}body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 1px,rgba(201,169,110,0.08) 1px,rgba(201,169,110,0.08) 2px),repeating-linear-gradient(90deg,transparent,transparent 3px,rgba(123,163,136,0.05) 3px,rgba(123,163,136,0.05) 4px)}.reveal{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}.section-sash{width:48px;height:3px;margin:1.2rem auto 0;background:linear-gradient(90deg,var(--gold) 0%,var(--gold) 20%,var(--gold) 60%,transparent 100%);border-radius:2px}.ink-brush{width:100%;height:14px;margin:0;background:linear-gradient(90deg,transparent 0%,rgba(44,44,44,0.4) 5%,rgba(44,44,44,0.5) 18%,rgba(44,44,44,0.35) 35%,rgba(44,44,44,0.2) 55%,rgba(44,44,44,0.08) 75%,transparent 100%);border-radius:5px}.ink-brush::after{content:'';position:absolute;top:4px;left:8%;right:8%;height:6px;background:linear-gradient(90deg,transparent,rgba(201,169,110,0.5) 25%,rgba(201,169,110,0.3) 55%,transparent)}.btn{display:inline-flex;align-items:center;gap:6px;padding:0.7rem 1.8rem;font-size:0.85rem;font-weight:400;text-decoration:none;letter-spacing:0.08em;transition:all .3s;cursor:pointer;border:none;line-height:1.5;border-radius:2px}.btn-primary{background:var(--vermillion);color:#fff}.btn-primary:hover{opacity:.88;transform:translateY(-2px)}.btn-outline{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:60px;background:rgba(237,228,216,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--smoke)}.nav-back{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink-soft);font-size:0.82rem;letter-spacing:0.06em;transition:color .2s}.nav-back:hover{color:var(--vermillion)}.nav-back .arrow{font-size:1rem}.nav-title{font-size:0.85rem;color:var(--ink);letter-spacing:0.1em}.nav-cta{padding:6px 20px;background:var(--vermillion);color:#fff;font-size:0.75rem;text-decoration:none;letter-spacing:0.06em;transition:opacity .2s}.nav-cta:hover{opacity:.85}@media(max-width:768px){.nav-title{display:none}}.hero{min-height:70vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;text-align:center;padding:6rem 5vw 4rem}.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(0.45)}.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,var(--paper) 100%)}.hero-content{position:relative;z-index:2;color:#fff;max-width:700px}.hero-badge{font-size:0.7rem;letter-spacing:0.3em;color:var(--gold);margin-bottom:0.6rem;opacity:0.9}.hero-content h1{font-size:clamp(2.2rem,5vw,4rem);font-weight:400;letter-spacing:0.08em;margin-bottom:0.8rem;line-height:1.15}.hero-content p{font-size:0.95rem;color:rgba(255,255,255,0.85);line-height:1.8;max-width:520px;margin:0 auto 1.5rem}.hero-stats{display:flex;gap:2rem;justify-content:center;margin-top:1.5rem}.hero-stats .hs-item{text-align:center}.hero-stats .hs-num{font-size:1.6rem;color:var(--gold)}.hero-stats .hs-label{font-size:0.6rem;color:rgba(255,255,255,0.6);letter-spacing:0.12em;margin-top:2px}@media(max-width:768px){.hero-stats{gap:1rem}}section{padding:4rem 5vw;position:relative}.section-inner{max-width:1080px;margin:0 auto}.section-head{text-align:center;margin-bottom:2.5rem}.section-kicker{font-size:0.65rem;color:var(--gold);letter-spacing:0.2em;margin-bottom:0.6rem}.section-kicker::before,.section-kicker::after{content:'——';margin:0 6px;opacity:.5}.section-title{font-size:clamp(1.5rem,2.5vw,2.2rem);font-weight:400;letter-spacing:0.08em;color:var(--ink);margin-bottom:0.5rem}.section-sub{font-size:0.85rem;color:var(--ink-soft);max-width:640px;margin:0 auto;line-height:2}.intro-grid{display:grid;grid-template-columns:3fr 2fr;gap:2.5rem;align-items:start;margin-top:2rem}.intro-text p{font-size:0.88rem;color:var(--ink-soft);line-height:2.2;margin-bottom:0.8rem;letter-spacing:0.03em}.intro-text em{color:var(--ink);font-style:normal}.intro-specs{background:var(--panel);padding:1.5rem 2rem}.intro-specs h4{font-size:0.8rem;font-weight:400;color:var(--gold);letter-spacing:0.1em;margin-bottom:0.8rem}.intro-specs td{padding:0.5rem 0;font-size:0.82rem;color:var(--ink-soft);border-bottom:1px solid var(--smoke);width:50%}.intro-specs td:first-child{color:var(--ink)}@media(max-width:768px){.intro-grid{grid-template-columns:1fr;gap:1.5rem}}#applications{background:var(--panel);border-top:1px solid var(--smoke)}.app-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2rem}.app-card{background:var(--paper);padding:2rem;transition:all .3s;cursor:default}.app-card:hover{transform:translateY(-3px);box-shadow:0 4px 16px rgba(44,44,44,0.04)}.app-card .app-icon{font-size:1.6rem;margin-bottom:0.4rem}.app-card h4{font-size:0.95rem;font-weight:400;margin-bottom:0.3rem;letter-spacing:0.06em}.app-card .app-scene{font-size:0.72rem;color:var(--vermillion);margin-bottom:0.5rem;letter-spacing:0.04em}.app-card p{font-size:0.78rem;color:var(--ink-soft);line-height:1.8;margin-bottom:0.6rem}.app-card .app-example{font-size:0.72rem;color:var(--ink-fade);padding-left:12px;border-left:2px solid var(--gold);font-style:italic}@media(max-width:768px){.app-grid{grid-template-columns:1fr}}.adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:2rem}.adv-card{border:1px solid var(--line);padding:1.5rem;text-align:center;background:var(--panel);transition:all .3s}.adv-card:hover{border-color:var(--gold);transform:translateY(-2px)}.adv-icon{font-size:1.8rem;margin-bottom:0.6rem;display:block}.adv-card h4{font-size:0.9rem;font-weight:400;margin-bottom:4px}.adv-card p{font-size:0.78rem;color:var(--ink-soft);line-height:1.8}.mat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px;margin-top:2rem}.mat-item{background:var(--panel);padding:1.5rem 1rem;text-align:center;transition:all .25s;cursor:default}.mat-item:hover{transform:translateY(-2px)}.mat-item .mat-img{font-size:2rem;margin-bottom:6px;display:block}.mat-item .mat-name{font-size:0.85rem;font-weight:400;margin-bottom:2px}.mat-item .mat-note{font-size:0.65rem;color:var(--ink-soft)}#pricing{background:var(--panel);border-top:1px solid var(--smoke)}.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:2rem}.price-card{background:var(--paper);padding:1.8rem;text-align:center;transition:all .3s;position:relative}.price-card:hover{transform:translateY(-3px);box-shadow:0 4px 16px rgba(44,44,44,0.04)}.price-card .p-name{font-size:0.9rem;color:var(--ink);margin-bottom:2px}.price-card .p-sub{font-size:0.7rem;color:var(--ink-fade);margin-bottom:0.6rem}.price-card .p-price{font-size:1.6rem;color:var(--vermillion);margin-bottom:2px}.price-card .p-note{font-size:0.68rem;color:var(--ink-fade)}.price-card.featured{border:1px solid rgba(201,169,110,0.3)}.price-card .p-badge{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:0.55rem;padding:2px 12px;letter-spacing:0.06em}.price-note{text-align:center;font-size:0.75rem;color:var(--ink-fade);margin-top:1rem}#gallery{border-top:1px solid var(--smoke)}.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:2rem}.gal-item{aspect-ratio:4/3;background-size:cover;background-position:center;transition:all .35s;cursor:pointer;position:relative}.gal-item:hover{filter:brightness(0.85);transform:scale(1.01)}.gal-item.tall{aspect-ratio:3/4;grid-row:span 2}.gal-item.wide{grid-column:span 2}@media(max-width:768px){.gal-grid{grid-template-columns:1fr 1fr}.gal-item.tall{grid-row:auto}.gal-item.wide{grid-column:auto}}.process-steps{display:grid;grid-template-columns:repeat(4,1fr);position:relative;margin-top:2rem}.process-steps::before{content:'';position:absolute;top:24px;left:28px;right:28px;height:1px;background:linear-gradient(90deg,var(--gold),var(--vermillion),var(--gold));opacity:0.12}.ps-item{padding:0 16px 0 0;position:relative}.ps-num{width:48px;height:48px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--paper);margin-bottom:0.8rem;position:relative;z-index:1;font-size:0.65rem;color:var(--ink-soft);transition:all .3s}.ps-item:hover .ps-num{background:var(--vermillion);color:#fff;border-color:var(--vermillion)}.ps-title{font-size:0.9rem;font-weight:400;margin-bottom:4px;letter-spacing:0.06em}.ps-desc{font-size:0.78rem;color:var(--ink-soft);line-height:1.8}.ps-badge{display:inline-block;margin-top:4px;font-size:0.65rem;color:var(--gold)}@media(max-width:768px){.process-steps{grid-template-columns:1fr 1fr;gap:1.5rem 1rem}.process-steps::before{display:none}}#faq{background:var(--panel);border-top:1px solid var(--smoke)}.faq-list{max-width:640px;margin:2rem auto 0}.faq-item{border-bottom:1px solid var(--smoke);overflow:hidden}.faq-q{width:100%;padding:1rem 0;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:none;color:var(--ink);font-size:0.88rem;font-weight:400;cursor:pointer;text-align:left;letter-spacing:0.02em;transition:color .2s}.faq-q:hover{color:var(--gold)}.faq-arrow{flex-shrink:0;width:24px;height:24px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;transition:all .3s;color:var(--ink-soft)}.faq-item.open .faq-arrow{transform:rotate(45deg);border-color:var(--gold);color:var(--gold)}.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;font-size:0.82rem;color:var(--ink-soft);line-height:2}.faq-item.open .faq-a{max-height:500px;padding:0 0 1rem 0}#contact{text-align:center}.contact-cards{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:2rem 0}.c-card{background:var(--panel);border:1px solid var(--line);padding:1.2rem 2rem;min-width:150px;transition:all .25s;cursor:pointer;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:4px}.c-card:hover{border-color:var(--gold);transform:translateY(-2px)}.c-icon{font-size:1.2rem;display:block;margin-bottom:2px}.c-label{font-size:0.68rem;color:var(--ink-soft);letter-spacing:0.08em}.c-val{font-size:0.88rem;color:var(--vermillion);font-weight:400}footer{text-align:center;padding:2rem 5vw;border-top:1px solid var(--line)}footer .f-brand{font-size:0.9rem;color:var(--ink);letter-spacing:0.06em;margin-bottom:4px}footer .f-copy{font-size:0.72rem;color:var(--ink-fade);letter-spacing:0.04em}footer .f-links{display:flex;gap:1rem;justify-content:center;margin:0.8rem 0}footer .f-links a{font-size:0.72rem;color:var(--ink-soft);text-decoration:none;letter-spacing:0.06em}footer .f-links a:hover{color:var(--gold)}.back-top{position:fixed;bottom:24px;right:24px;z-index:100;width:36px;height:36px;background:var(--vermillion);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.9rem;opacity:0;transition:all .3s;pointer-events:none;box-shadow:0 4px 16px rgba(194,59,34,0.15)}.back-top.show{opacity:1;pointer-events:all}#toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);font-size:0.82rem;padding:8px 20px;letter-spacing:0.06em;opacity:0;transition:all .3s;z-index:9000;pointer-events:none}
+</style>
+</head>
+<body>
+<button class="back-top" id="backTop">↑</button>
+<nav>
+  <a href="瑞琴雅集_官网_v2.html" class="nav-back"><span class="arrow">←</span> 返回主页</a>
+  <span class="nav-title">瑞琴雅集 · 激光雕刻</span>
+  <a href="#contact" class="nav-cta">获取报价</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('images/laser-detail.jpg')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal visible">
+    <div class="hero-badge">雅艺 · 壹</div>
+    <h1>激光雕刻</h1>
+    <p>以光为刃，雕琢万物。高精度图案、文字、照片还原，快而美，成本低，单件即起。</p>
+    <div style="margin-top:1rem">
+      <a href="#contact" class="btn btn-primary">发图获取报价</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hs-item"><div class="hs-num">±0.1mm</div><div class="hs-label">精度</div></div>
+      <div class="hs-item"><div class="hs-num">900×600</div><div class="hs-label">最大幅面mm</div></div>
+      <div class="hs-item"><div class="hs-num">24h</div><div class="hs-label">最快出图</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">工艺概述</div>
+      <h2 class="section-title">以光为笔，以材为纸</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="intro-grid">
+      <div class="intro-text reveal">
+        <p>激光雕刻，是以高能量激光束在材料表面进行精密切割与雕刻的工艺。激光束犹如一支<em>无形的笔</em>，在木材、亚克力、皮革、竹、金属等材料上留下精确而美丽的痕迹。</p>
+        <p>它是<em>最灵活</em>的定制方案——速度快、精度高、成本低，<em>单件即可起做</em>。无论是企业Logo批量雕刻、个性化礼品定制，还是精密的图文还原，激光雕刻都能以极短的交付周期呈现令人满意的成品。</p>
+        <p>不同材质呈现不同气韵：木材的温润、亚克力的通透、皮革的高级感——每一件作品都独一无二。</p>
+      </div>
+      <div class="intro-specs reveal reveal-d1">
+        <h4>技术参数</h4>
+        <table>
+          <tr><td>雕刻精度</td><td>±0.1mm</td></tr>
+          <tr><td>最大幅面</td><td>900 × 600mm</td></tr>
+          <tr><td>最小线宽</td><td>0.1mm</td></tr>
+          <tr><td>适用材料</td><td>木材 · 亚克力 · 皮革 · 竹 · 金属打标</td></tr>
+          <tr><td>文件格式</td><td>AI · PDF · SVG · DXF</td></tr>
+          <tr><td>设计费</td><td>简图免费 · 复杂¥50起</td></tr>
+          <tr><td>交期参考</td><td>1-3个工作日</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="applications">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">应用场景</div>
+      <h2 class="section-title">无处不在的雕刻之美</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="app-grid reveal">
+      <div class="app-card">
+        <span class="app-icon">🏢</span>
+        <h4>企业礼品定制</h4>
+        <div class="app-scene">场景：年会礼品 · 商务赠品 · 品牌物料</div>
+        <p>企业Logo雕刻在公司纪念品、年会伴手礼上，品牌形象深入人心。批量订单品质如一，交期可控。</p>
+        <div class="app-example">案例：某科技公司定制150套胡桃木Logo礼盒，5天交付，客户收到后主动发朋友圈推荐。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🎁</span>
+        <h4>个人创意礼品</h4>
+        <div class="app-scene">场景：生日 · 纪念日 · 婚礼 · 毕业</div>
+        <p>情侣姓名刻字、结婚纪念日期、宠物肖像、毕业纪念——将心意化作实物，独一无二。</p>
+        <div class="app-example">案例：客户提供合照线稿，定制双人剪影木质相框，新娘收到后感动落泪。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🏅</span>
+        <h4>奖牌奖杯定制</h4>
+        <div class="app-scene">场景：体育赛事 · 企业年会 · 学校活动</div>
+        <p>亚克力奖牌、木质奖杯、金属奖盘。文字日期现场可改，批量制作统一精美。</p>
+        <div class="app-example">案例：某马拉松赛事定制800枚木质完赛奖牌，刻有选手姓名和完赛时间，跑友爱不释手。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🏠</span>
+        <h4>家居装饰工艺品</h4>
+        <div class="app-scene">场景：装饰画 · 屏风 · 牌匾 · 门牌</div>
+        <p>中式镂空屏风、书法装饰画、门牌号定制。可做精细镂空效果，光影效果极佳。</p>
+        <div class="app-example">案例：客户为新中式客厅定制一组四条屏《兰亭序》雕刻，成为全屋视觉焦点。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">📱</span>
+        <h4>数码配件定制</h4>
+        <div class="app-scene">场景：手机壳 · AirPods保护壳 · 笔记本刻名</div>
+        <p>木质/皮革手机壳激光刻字、AirPods保护壳定制、笔记本电脑刻名。轻巧精美，彰显个性。</p>
+        <div class="app-example">案例：某公司团建定制50个木质手机壳，每人刻上名字和入职年份，员工归属感大增。</div>
+      </div>
+      <div class="app-card">
+        <span class="app-icon">🏷️</span>
+        <h4>铭牌标识系统</h4>
+        <div class="app-scene">场景：设备铭牌 · 门牌标识 · 产品标签</div>
+        <p>不锈钢/铝板/亚克力铭牌，金属打标经久不褪色。适合设备管理、公司门牌、产品标识。</p>
+        <div class="app-example">案例：为某实验室定制30块设备铭牌，不锈钢材质，Logo+二维码一体成型，耐磨耐腐蚀。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">核心优势</div>
+      <h2 class="section-title">为何选择激光雕刻</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="adv-grid reveal">
+      <div class="adv-card"><span class="adv-icon">⚡</span><h4>速度快</h4><p>激光雕刻是最快的定制工艺，小批量1-2天即可交付。加急可当日出图。</p></div>
+      <div class="adv-card"><span class="adv-icon">💰</span><h4>成本低</h4><p>无需模具、无需刀模，单件成本极低。单件订做和批量生产都合适。</p></div>
+      <div class="adv-card"><span class="adv-icon">🎯</span><h4>精度高</h4><p>±0.1mm精度，精细文字、复杂图案、照片级灰度雕刻均可实现。</p></div>
+      <div class="adv-card"><span class="adv-icon">🪵</span><h4>材料广</h4><p>木材、亚克力、皮革、竹、金属打标……几乎无所不雕。</p></div>
+      <div class="adv-card"><span class="adv-icon">🎨</span><h4>无需设计？</h4><p>来图即可。无图也可口述描述，免费出设计方案，满意再制作。</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="materials">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">适用材料</div>
+      <h2 class="section-title">不同材质，不同气韵</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="mat-grid reveal">
+      <div class="mat-item"><span class="mat-img">🪵</span><div class="mat-name">原木</div><div class="mat-note">温润自然，纹路清晰</div></div>
+      <div class="mat-item"><span class="mat-img">🎯</span><div class="mat-name">亚克力</div><div class="mat-note">通透多彩，边缘光洁</div></div>
+      <div class="mat-item"><span class="mat-img">🧴</span><div class="mat-name">皮革</div><div class="mat-note">压印质感，高端定制</div></div>
+      <div class="mat-item"><span class="mat-img">🎍</span><div class="mat-name">竹</div><div class="mat-note">清雅环保，温润如玉</div></div>
+      <div class="mat-item"><span class="mat-img">✨</span><div class="mat-name">金属打标</div><div class="mat-note">不锈钢/铝/铜，持久</div></div>
+      <div class="mat-item"><span class="mat-img">📄</span><div class="mat-name">纸张卡纸</div><div class="mat-note">精密切割，适用文创</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">制作流程</div>
+      <h2 class="section-title">四步完成定制</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="process-steps reveal">
+      <div class="ps-item"><div class="ps-num">壹</div><div class="ps-title">发图来样</div><div class="ps-desc">发送设计文件或参考图，告知材质与尺寸</div><div class="ps-badge">⚡5分钟回复</div></div>
+      <div class="ps-item"><div class="ps-num">贰</div><div class="ps-title">确认方案</div><div class="ps-desc">确认设计稿、材质、报价、工期</div><div class="ps-badge">📋免费设计</div></div>
+      <div class="ps-item"><div class="ps-num">叁</div><div class="ps-title">精雕细琢</div><div class="ps-desc">激光雕刻加工，同步进度照片</div><div class="ps-badge">📸全程透明</div></div>
+      <div class="ps-item"><div class="ps-num">肆</div><div class="ps-title">交付验收</div><div class="ps-desc">确认满意，顺丰发货到家</div><div class="ps-badge">🚚全国发货</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="gallery">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">作品展示</div>
+      <h2 class="section-title">激光雕刻作品</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="gal-grid reveal">
+      <div class="gal-item wide" style="background-image:url('images/laser-wood.jpg')"></div>
+      <div class="gal-item tall" style="background-image:url('images/laser-gift.jpg')"></div>
+      <div class="gal-item" style="background-image:url('images/laser-leather.jpg')"></div>
+      <div class="gal-item" style="background-image:url('images/laser-detail.jpg')"></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="pricing">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">价格透明</div>
+      <h2 class="section-title">按需定价，丰俭由人</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="price-grid reveal">
+      <div class="price-card"><div class="p-name">木质Logo牌</div><div class="p-sub">白木/胡桃木</div><div class="p-price">¥50</div><div class="p-note">起，含设计排版</div></div>
+      <div class="price-card featured"><div class="p-badge">热销</div><div class="p-name">亚克力摆件</div><div class="p-sub">透明/彩色亚克力</div><div class="p-price">¥35</div><div class="p-note">起，10×10cm内</div></div>
+      <div class="price-card"><div class="p-name">皮革定制</div><div class="p-sub">植鞣/铬鞣</div><div class="p-price">¥60</div><div class="p-note">起，压印工艺</div></div>
+      <div class="price-card"><div class="p-name">批量定制</div><div class="p-sub">企业礼品</div><div class="p-price">询价</div><div class="p-note">50件起享阶梯价</div></div>
+    </div>
+    <p class="price-note">以上为参考基准价 · 最终价格按图报价 · 量大从优</p>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="faq">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">常见问题</div>
+      <h2 class="section-title">关于激光雕刻</h2>
+      <div class="section-sash"></div>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><button class="faq-q">激光雕刻能刻照片吗？<div class="faq-arrow">+</div></button><div class="faq-a">可以。黑白照片可通过灰度雕刻还原细节。我们建议提供清晰的高对比度照片，效果最佳。彩色照片需要先转为灰度图。</div></div>
+      <div class="faq-item"><button class="faq-q">木质雕刻会烧焦吗？<div class="faq-arrow">+</div></button><div class="faq-a">激光雕刻木材会产生轻微烧焦色（浅褐色），这是正常的自然效果，反而增加了作品的复古质感。也可通过调整功率控制焦化程度，浅色木材更明显。</div></div>
+      <div class="faq-item"><button class="faq-q">最大能做多大？<div class="faq-arrow">+</div></button><div class="faq-a">标准设备最大幅面900×600mm。如需更大尺寸，可拼接或多片组合。建议提前沟通尺寸以便评估。</div></div>
+      <div class="faq-item"><button class="faq-q">单件能做吗？多久出货？<div class="faq-arrow">+</div></button><div class="faq-a">单件完全可以做，无最低起订量。一般1-3天出货，急单可协商加急，最快24小时。</div></div>
+      <div class="faq-item"><button class="faq-q">你们提供设计服务吗？<div class="faq-arrow">+</div></button><div class="faq-a">提供。简单排版免费，复杂设计¥50起。你也可以自己提供AI/PDF/SVG格式文件，我们直接加工。</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ink-brush"></div>
+
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">开始定制</div>
+      <h2 class="section-title">发图获取激光报价</h2>
+      <p class="section-sub">发来设计图或参考照片，五分钟内回复精确报价。也欢迎来图咨询材质与工艺建议。</p>
+      <div class="section-sash"></div>
+    </div>
+    <div class="contact-cards reveal">
+      <div class="c-card" onclick="copyWx()"><span class="c-icon">💬</span><span class="c-label">微信</span><span class="c-val">stopshow2</span></div>
+      <a href="tel:18688462968" class="c-card"><span class="c-icon">📞</span><span class="c-label">电话</span><span class="c-val">18688462968</span></a>
+      <a href="mailto:yixue990928@163.com" class="c-card"><span class="c-icon">📧</span><span class="c-label">邮箱</span><span class="c-val">yixue990928@163.com</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f-links"><a href="瑞琴雅集_官网_v2.html">主页</a><a href="#contact">联系</a></div>
+  <div class="f-brand">瑞琴雅集创客工作室</div>
+  <div class="f-copy">广州 · 白云 | 微信：stopshow2 | 电话：18688462968</div>
+</footer>
+<div id="toast">微信号已复制 ✓</div>
+<script>
+const backTop=document.getElementById('backTop');
+window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>300));
+backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const observer=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('.faq-q').forEach(b=>{b.addEventListener('click',()=>{const i=b.parentElement,w=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));if(!w)i.classList.add('open')})});
+let tt;function copyWx(){navigator.clipboard.writeText('stopshow2');const e=document.getElementById('toast');e.style.opacity='1';e.style.transform='translateX(-50%) translateY(0)';clearTimeout(tt);tt=setTimeout(()=>{e.style.opacity='0';e.style.transform='translateX(-50%) translateY(20px)'},1800)}
+</script>
+</body>
+</html>
