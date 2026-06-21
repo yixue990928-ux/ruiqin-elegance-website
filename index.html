@@ -87,6 +87,15 @@
         以现代数字智造，承文人雅集精神。
       </div>
     </div>
+    <div class="hero-vid-box" style="max-width:540px;margin:1.8rem auto;position:relative;border-radius:8px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);background:#000;">
+      <video preload="metadata" playsinline id="heroVideo" style="width:100%;display:block;cursor:pointer;" poster="images/6a37455bb4352a980f665e55.png">
+        <source src="images/studio-intro.mp4" type="video/mp4">
+      </video>
+      <button class="hero-vid-btn" id="heroVidBtn" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(0,0,0,0.2);border:none;color:#fff;font-size:1.1rem;letter-spacing:0.08em;cursor:pointer;font-family:inherit;transition:background .3s;" onclick="var v=document.getElementById('heroVideo');v.play();this.style.display='none';v.setAttribute('controls','');v.style.cursor='default'">&#9654; 点击播放工作室介绍</button>
+    </div>
+    <script>
+    document.getElementById('heroVideo').onended=function(){this.removeAttribute('controls');document.getElementById('heroVidBtn').style.display='flex'};
+    </script>
     <div class="hero-divider"></div>
     <div class="hero-names">
       <div class="hn-block"><span class="hn-char c1">瑞</span><span class="hn-mean">祥瑞</span></div>
@@ -114,26 +123,6 @@
     <div class="hero-scroll-line"></div>
   </div>
 </section>
-
-<!-- 视频 -->
-<div class="vid-wrap">
-  <div class="vid-box" id="studioVideo" onclick="toggleVideo(this)">
-    <video preload="metadata" playsinline controls style="pointer-events:none;">
-      <source src="images/studio-intro.mp4" type="video/mp4">
-    </video>
-    <div class="vid-play">▶</div>
-  </div>
-  <div class="vid-label">点击播放 · 工作室动漫风格介绍</div>
-</div>
-
-<script>
-function toggleVideo(el){
-  var v=el.querySelector('video');
-  if(el.classList.contains('playing')){v.pause();el.classList.remove('playing');v.style.pointerEvents='none'}
-  else{v.play();el.classList.add('playing');v.style.pointerEvents='auto'}
-  v.onended=function(){el.classList.remove('playing');v.style.pointerEvents='none'};
-}
-</script>
 
 <!-- ABOUT -->
 <div class="ink-brush"></div>
