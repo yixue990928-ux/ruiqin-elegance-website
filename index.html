@@ -67,13 +67,7 @@
       <path d="M0 400 L0 340 Q240 320 480 330 Q720 340 840 300 Q900 280 960 290 Q1020 300 1080 310 Q1200 330 1440 320 L1440 400 Z" fill="#2C2C2C" opacity="0.12"/>
     </svg>
   </div>
-  <div id="heroBgVid" style="position:absolute;top:0;left:0;right:0;bottom:0;z-index:0;overflow:hidden;cursor:pointer;" onclick="var v=document.getElementById('bgVideo');if(v.muted){v.muted=false;v.play();this.style.opacity='1';document.getElementById('bgPlayBtn').style.display='none';v.setAttribute('controls','')}else{v.pause();this.style.opacity='0.5';document.getElementById('bgPlayBtn').style.display='flex';v.removeAttribute('controls')}">
-      <video id="bgVideo" muted loop playsinline style="width:100%;height:100%;object-fit:fill;" poster="images/6a37455bb4352a980f665e55.png">
-        <source src="images/studio-intro.mp4" type="video/mp4">
-      </video>
-      <div id="bgPlayBtn" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.15);color:#fff;font-size:2rem;">&#9654;</div>
-    </div>
-    <script>document.getElementById('bgVideo').onended=function(){this.muted=true;document.getElementById('bgPlayBtn').style.display='flex';this.removeAttribute('controls')}</script>
+  
     <span class="hero-big-mark">雅</span>
   <div class="hero-inner">
     <span class="hero-inkdot d1"></span>
@@ -102,6 +96,15 @@
       <div class="hn-block"><span class="hn-char c3">雅</span><span class="hn-mean">雅致</span></div>
       <div class="hn-block"><span class="hn-char c4">集</span><span class="hn-mean">汇集</span></div>
     </div>
+    <div class="hero-vid-inline" style="width:100%;max-width:500px;margin:0.8rem auto;border-radius:6px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
+      <div style="position:relative;cursor:pointer;background:#000;" onclick="var v=document.getElementById('heroVid');if(v.paused){v.play();this.querySelector('.vid-overlay').style.display='none'}else{v.pause();this.querySelector('.vid-overlay').style.display=''}">
+        <video id="heroVid" preload="metadata" playsinline muted style="width:100%;display:block;" poster="images/6a37455bb4352a980f665e55.png">
+          <source src="images/studio-intro.mp4" type="video/mp4">
+        </video>
+        <div class="vid-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.08);font-size:2rem;color:#fff;pointer-events:none;">▶</div>
+      </div>
+    </div>
+    <script>document.getElementById('heroVid').onended=function(){this.parentElement.querySelector('.vid-overlay').style.display='flex';this.load()}</script>
     <p class="hero-sub">
       <strong>创客之志 · 孵化以成</strong><br>
       高端定制 · 激光雕刻 · 3D打印 · CNC五轴加工<br>
