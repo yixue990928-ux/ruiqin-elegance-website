@@ -67,7 +67,14 @@
       <path d="M0 400 L0 340 Q240 320 480 330 Q720 340 840 300 Q900 280 960 290 Q1020 300 1080 310 Q1200 330 1440 320 L1440 400 Z" fill="#2C2C2C" opacity="0.12"/>
     </svg>
   </div>
-  <span class="hero-big-mark">雅</span>
+  <div id="heroBgVid" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:0;width:420px;height:236px;border-radius:6px;overflow:hidden;cursor:pointer;" onclick="var v=document.getElementById('bgVideo');if(v.muted){v.muted=false;v.play();this.style.opacity='1';document.getElementById('bgPlayBtn').style.display='none';v.setAttribute('controls','')}else{v.pause();this.style.opacity='0.5';document.getElementById('bgPlayBtn').style.display='flex';v.removeAttribute('controls')}">
+      <video id="bgVideo" muted loop playsinline style="width:100%;height:100%;object-fit:cover;" poster="images/6a37455bb4352a980f665e55.png">
+        <source src="images/studio-intro.mp4" type="video/mp4">
+      </video>
+      <div id="bgPlayBtn" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.15);color:#fff;font-size:2rem;">&#9654;</div>
+    </div>
+    <script>document.getElementById('bgVideo').onended=function(){this.muted=true;document.getElementById('bgPlayBtn').style.display='flex';this.removeAttribute('controls')}</script>
+    <span class="hero-big-mark">雅</span>
   <div class="hero-inner">
     <span class="hero-inkdot d1"></span>
     <span class="hero-inkdot d2"></span>
@@ -87,15 +94,7 @@
         以现代数字智造，承文人雅集精神。
       </div>
     </div>
-    <div class="hero-vid-box" style="width:100%;max-width:600px;margin:2rem auto;position:relative;border-radius:8px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);background:#000;aspect-ratio:16/9;">
-      <video preload="metadata" playsinline id="heroVideo" style="width:100%;display:block;cursor:pointer;" poster="images/6a37455bb4352a980f665e55.png">
-        <source src="images/studio-intro.mp4" type="video/mp4">
-      </video>
-      <button class="hero-vid-btn" id="heroVidBtn" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(0,0,0,0.2);border:none;color:#fff;font-size:1.1rem;letter-spacing:0.08em;cursor:pointer;font-family:inherit;transition:background .3s;" onclick="var v=document.getElementById('heroVideo');v.play();this.style.display='none';v.setAttribute('controls','');v.style.cursor='default'">&#9654; 点击播放工作室介绍</button>
-    </div>
-    <script>
-    document.getElementById('heroVideo').onended=function(){this.removeAttribute('controls');document.getElementById('heroVidBtn').style.display='flex'};
-    </script>
+    
     <div class="hero-divider"></div>
     <div class="hero-names">
       <div class="hn-block"><span class="hn-char c1">瑞</span><span class="hn-mean">祥瑞</span></div>
