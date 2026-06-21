@@ -118,10 +118,10 @@
 </section>
 
 <!-- 视频 -->
-<div style="display:flex;justify-content:center;padding:0 5vw 2rem;">
-  <div style="width:300px;border-radius:6px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
+<div style="text-align:center;padding:0 5vw 2rem;">
+  <div style="display:inline-block;width:300px;border-radius:6px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
     <div style="position:relative;cursor:pointer;background:#000;" onclick="var v=document.getElementById('midVid');if(v.paused){v.play();this.querySelector('.mo').style.display='none'}else{v.pause();this.querySelector('.mo').style.display='flex'}">
-      <video id="midVid" preload="metadata" playsinline muted style="width:100%;display:block;" poster="images/6a37455bb4352a980f665e55.png">
+      <video id="midVid" preload="metadata" playsinline style="width:100%;display:block;" poster="images/6a37455bb4352a980f665e55.png">
         <source src="images/studio-intro.mp4" type="video/mp4">
       </video>
       <div class="mo" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.08);font-size:2rem;color:#fff;pointer-events:none;">▶</div>
