@@ -95,16 +95,6 @@
       <div class="hn-block"><span class="hn-char c3">雅</span><span class="hn-mean">雅致</span></div>
       <div class="hn-block"><span class="hn-char c4">集</span><span class="hn-mean">汇集</span></div>
     </div>
-    <div style="width:100%;text-align:center;margin:0.5rem 0;">
-      <div style="display:inline-block;width:260px;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.04);border:1px solid var(--line);background:var(--panel);">
-        <div style="position:relative;cursor:pointer;background:#000;" onclick="var v=document.getElementById('hv5');if(v.paused){v.play();this.querySelector('.hv5o').style.display='none'}else{v.pause();this.querySelector('.hv5o').style.display='flex'}">
-          <video id="hv5" preload="metadata" playsinline style="width:100%;display:block;" poster="images/6a37455bb4352a980f665e55.png">
-            <source src="images/studio-intro.mp4" type="video/mp4">
-          </video>
-          <div class="hv5o" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(44,44,44,0.04);font-size:2rem;color:var(--ink-soft);pointer-events:none;">▶</div>
-        </div>
-      </div>
-    </div>
     <p class="hero-sub">
       <strong>创客之志 · 孵化以成</strong><br>
       高端定制 · 激光雕刻 · 3D打印 · CNC五轴加工<br>
@@ -125,6 +115,20 @@
     <div class="hero-scroll-line"></div>
   </div>
 </section>
+
+
+<!-- 视频 -->
+<div style="width:100%;background:transparent;padding:0 5vw 1.5rem;">
+  <div style="max-width:800px;margin:0 auto;border:2px dashed var(--ink);border-radius:0;overflow:hidden;background:var(--paper);">
+    <div style="position:relative;width:100%;aspect-ratio:16/7;cursor:pointer;background:var(--paper);" onclick="var v=document.getElementById('hv6');if(v.paused){v.play();this.querySelector('.hv6o').style.display='none'}else{v.pause();this.querySelector('.hv6o').style.display='flex'}">
+      <video id="hv6" preload="metadata" playsinline style="width:100%;height:100%;object-fit:cover;display:block;background:var(--paper);" poster="images/6a37455bb4352a980f665e55.png">
+        <source src="images/studio-intro.mp4" type="video/mp4">
+      </video>
+      <div class="hv6o" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.03);font-size:3rem;color:var(--ink-soft);pointer-events:none;">▶</div>
+    </div>
+  </div>
+</div>
+<script>document.getElementById('hv6').onended=function(){this.parentElement.querySelector('.hv6o').style.display='flex'}</script>
 
 <!-- ABOUT -->
 <div class="ink-brush"></div>
