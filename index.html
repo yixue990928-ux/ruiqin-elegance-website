@@ -95,18 +95,7 @@
       <div class="hn-block"><span class="hn-char c3">雅</span><span class="hn-mean">雅致</span></div>
       <div class="hn-block"><span class="hn-char c4">集</span><span class="hn-mean">汇集</span></div>
     </div>
-    <div style="width:100%;display:flex;justify-content:center;margin:0.3rem 0;">
-      <div style="width:180px;border-radius:6px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.04);background:#000;">
-        <div style="position:relative;cursor:pointer;" onclick="var v=document.getElementById('hv3');if(v.paused){v.play();this.querySelector('.ov3').style.display='none'}else{v.pause();this.querySelector('.ov3').style.display='flex'}">
-          <video id="hv3" preload="metadata" playsinline style="width:100%;display:block;" poster="images/6a37455bb4352a980f665e55.png">
-            <source src="images/studio-intro.mp4" type="video/mp4">
-          </video>
-          <div class="ov3" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.12);font-size:2rem;color:#fff;pointer-events:none;">▶</div>
-        </div>
-      </div>
-    </div>
-    <script>document.getElementById('hv3').onended=function(){this.pause();this.parentElement.querySelector('.ov3').style.display='flex'}</script>
-    <p class="hero-sub">
+<p class="hero-sub">
       <strong>创客之志 · 孵化以成</strong><br>
       高端定制 · 激光雕刻 · 3D打印 · CNC五轴加工<br>
       凡君所想，皆可至此，琢而成器
@@ -126,6 +115,10 @@
     <div class="hero-scroll-line"></div>
   </div>
 </section>
+
+<!-- 视频 -->
+<div style="width:100%;display:flex;justify-content:center;padding:0 0 1.5rem;"><div style="width:260px;border-radius:6px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.04);background:#000;"><div style="position:relative;cursor:pointer;" onclick="var v=document.getElementById('hv4');if(v.paused){v.play();this.querySelector('.ov4').style.display='none'}else{v.pause();this.querySelector('.ov4').style.display='flex'}"><video id="hv4" preload="metadata" playsinline style="width:100%;display:block;" poster="images/6a37455bb4352a980f665e55.png"><source src="images/studio-intro.mp4" type="video/mp4"></video><div class="ov4" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.12);font-size:2rem;color:#fff;pointer-events:none;">▶</div></div></div></div>
+<script>document.getElementById('hv4').onended=function(){this.pause();this.parentElement.querySelector('.ov4').style.display='flex'}</script>
 
 <!-- ABOUT -->
 <div class="ink-brush"></div>
